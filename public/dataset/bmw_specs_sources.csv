@@ -1,0 +1,809 @@
+generation_id,field_name,source_name,source_url,access_date,confidence
+BMW_02_SERIES,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_02_SERIES,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_02_SERIES,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_02_SERIES,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_02_SERIES,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_02_SERIES,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_02_SERIES,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_02_SERIES,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_1_E87,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_E87,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_E87,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_E87,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_E87,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_E87,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_E87,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_E87,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F20,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F20,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F20,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F20,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F20,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F20,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F20,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F20,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F40,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F40,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F40,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F40,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F40,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F40,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F40,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F40,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F70,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F70,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F70,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F70,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F70,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F70,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F70,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F70,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F22,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F22,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F22,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F22,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F22,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F22,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F22,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F22,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F44,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F44,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F44,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F44,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F44,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F44,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F44,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F44,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F45,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F45,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F45,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F45,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F45,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F45,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F45,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F45,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_G42,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_G42,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_G42,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_G42,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_G42,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_G42,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_G42,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_G42,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_U06,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_U06,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_U06,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_U06,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_U06,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_U06,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_U06,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_U06,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3-15_DA2,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3-15_DA2,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3-15_DA2,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3-15_DA2,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3-15_DA2,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3-15_DA2,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3-15_DA2,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3-15_DA2,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3-20_AM,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3-20_AM,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3-20_AM,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3-20_AM,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3-20_AM,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3-20_AM,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3-20_AM,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3-20_AM,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_303,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_303,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_303,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_303,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_303,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_303,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_303,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_303,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_309,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_309,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_309,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_309,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_309,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_309,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_309,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_309,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_315,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_315,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_315,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_315,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_315,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_315,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_315,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_315,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_319,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_319,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_319,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_319,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_319,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_319,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_319,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_319,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_320,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_320,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_320,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_320,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_320,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_320,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_320,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_320,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3200_CS,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3200_CS,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3200_CS,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3200_CS,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3200_CS,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3200_CS,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3200_CS,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3200_CS,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_321,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_321,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_321,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_321,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_321,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_321,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_321,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_321,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_326,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_326,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_326,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_326,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_326,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_326,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_326,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_326,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_327,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_327,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_327,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_327,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_327,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_327,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_327,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_327,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_328,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_328,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_328,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_328,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_328,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_328,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_328,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_328,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_329,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_329,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_329,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_329,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_329,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_329,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_329,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_329,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_335,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_335,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_335,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_335,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_335,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_335,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_335,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_335,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E21,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_E21,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_E21,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_E21,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_E21,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_E21,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_E21,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_E21,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_E30,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E30,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E30,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E30,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E30,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E30,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E30,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E30,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E36,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E36,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E36,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E36,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E36,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E36,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E36,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E36,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E46,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_E46,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_E46,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_E46,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_E46,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_E46,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_E46,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_E46,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_E90,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E90,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E90,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E90,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E90,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E90,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E90,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E90,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_F30,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_F30,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_F30,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_F30,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_F30,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_F30,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_F30,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_F30,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_G20,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_G20,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_G20,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_G20,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_G20,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_G20,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_G20,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_G20,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_4_F32,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_4_F32,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_4_F32,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_4_F32,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_4_F32,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_4_F32,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_4_F32,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_4_F32,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_4_G22,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_4_G22,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_4_G22,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_4_G22,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_4_G22,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_4_G22,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_4_G22,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_4_G22,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_501,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_501,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_501,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_501,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_501,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_501,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_501,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_501,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_502,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_502,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_502,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_502,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_502,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_502,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_502,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_502,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_503,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_503,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_503,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_503,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_503,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_503,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_503,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_503,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_507,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_507,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_507,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_507,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_507,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_507,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_507,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_507,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_5_E12,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E12,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E12,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E12,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E12,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E12,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E12,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E12,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E28,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E28,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E28,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E28,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E28,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E28,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E28,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E28,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E34,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_5_E34,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_5_E34,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_5_E34,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_5_E34,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_5_E34,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_5_E34,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_5_E34,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_5_E39,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_5_E39,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_5_E39,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_5_E39,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_5_E39,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_5_E39,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_5_E39,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_5_E39,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_5_E60,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E60,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E60,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E60,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E60,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E60,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E60,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E60,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_F10,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_F10,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_F10,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_F10,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_F10,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_F10,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_F10,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_F10,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_G30,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_G30,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_G30,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_G30,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_G30,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_G30,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_G30,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_G30,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_G60,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_G60,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_G60,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_G60,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_G60,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_G60,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_G60,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_G60,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_600,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_600,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_600,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_600,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_600,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_600,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_600,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_600,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_6_E24,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_E24,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_E24,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_E24,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_E24,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_E24,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_E24,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_E24,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_E63,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_E63,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_E63,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_E63,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_E63,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_E63,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_E63,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_E63,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_F12,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_F12,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_F12,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_F12,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_F12,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_F12,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_F12,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_F12,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_G32,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_G32,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_G32,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_G32,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_G32,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_G32,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_G32,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_G32,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_700,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_700,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_700,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_700,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_700,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_700,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_700,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_700,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_7_E23,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_E23,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_E23,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_E23,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_E23,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_E23,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_E23,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_E23,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_E32,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_7_E32,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_7_E32,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_7_E32,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_7_E32,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_7_E32,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_7_E32,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_7_E32,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_7_E38,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_7_E38,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_7_E38,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_7_E38,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_7_E38,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_7_E38,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_7_E38,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_7_E38,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_7_E65,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_E65,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_E65,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_E65,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_E65,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_E65,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_E65,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_E65,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_F01,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_F01,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_F01,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_F01,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_F01,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_F01,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_F01,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_F01,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_G11,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_G11,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_G11,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_G11,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_G11,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_G11,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_G11,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_G11,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_G70,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_G70,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_G70,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_G70,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_G70,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_G70,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_G70,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_G70,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_8_E31,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_8_E31,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_8_E31,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_8_E31,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_8_E31,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_8_E31,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_8_E31,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_8_E31,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_8_G15,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_8_G15,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_8_G15,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_8_G15,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_8_G15,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_8_G15,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_8_G15,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_8_G15,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_E3_SEDAN,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_E3_SEDAN,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_E3_SEDAN,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_E3_SEDAN,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_E3_SEDAN,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_E3_SEDAN,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_E3_SEDAN,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_E3_SEDAN,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_E9_COUPE,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_E9_COUPE,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_E9_COUPE,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_E9_COUPE,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_E9_COUPE,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_E9_COUPE,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_E9_COUPE,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_E9_COUPE,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_I3_I01,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I3_I01,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I3_I01,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I3_I01,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I3_I01,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I3_I01,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I3_I01,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I3_I01,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I4_G26,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I4_G26,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I4_G26,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I4_G26,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I4_G26,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I4_G26,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I4_G26,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I4_G26,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I5_G60,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I5_G60,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I5_G60,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I5_G60,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I5_G60,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I5_G60,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I5_G60,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I5_G60,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I7_G70,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I7_G70,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I7_G70,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I7_G70,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I7_G70,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I7_G70,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I7_G70,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I7_G70,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I8_I12,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I8_I12,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I8_I12,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I8_I12,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I8_I12,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I8_I12,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I8_I12,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I8_I12,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_ISETTA,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_ISETTA,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_ISETTA,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_ISETTA,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_ISETTA,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_ISETTA,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_ISETTA,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_ISETTA,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_IX1_U11,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX1_U11,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX1_U11,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX1_U11,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX1_U11,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX1_U11,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX1_U11,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX1_U11,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX2_U10,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX2_U10,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX2_U10,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX2_U10,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX2_U10,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX2_U10,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX2_U10,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX2_U10,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX3_G08,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX3_G08,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX3_G08,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX3_G08,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX3_G08,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX3_G08,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX3_G08,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX3_G08,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX_I20,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX_I20,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX_I20,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX_I20,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX_I20,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX_I20,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX_I20,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX_I20,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_M1_E26,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_M1_E26,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_M1_E26,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_M1_E26,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_M1_E26,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_M1_E26,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_M1_E26,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_M1_E26,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_NK_COUPE,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_NK_COUPE,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_NK_COUPE,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_NK_COUPE,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_NK_COUPE,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_NK_COUPE,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_NK_COUPE,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_NK_COUPE,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_NK_SEDAN,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_NK_SEDAN,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_NK_SEDAN,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_NK_SEDAN,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_NK_SEDAN,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_NK_SEDAN,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_NK_SEDAN,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_NK_SEDAN,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_X1_E84,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_E84,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_E84,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_E84,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_E84,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_E84,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_E84,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_E84,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_F48,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_F48,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_F48,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_F48,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_F48,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_F48,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_F48,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_F48,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_U11,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_U11,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_U11,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_U11,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_U11,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_U11,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_U11,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_U11,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X2_F39,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X2_F39,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X2_F39,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X2_F39,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X2_F39,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X2_F39,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X2_F39,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X2_F39,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X2_U10,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X2_U10,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X2_U10,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X2_U10,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X2_U10,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X2_U10,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X2_U10,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X2_U10,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_E83,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_E83,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_E83,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_E83,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_E83,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_E83,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_E83,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_E83,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_F25,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_F25,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_F25,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_F25,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_F25,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_F25,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_F25,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_F25,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_G01,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_G01,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_G01,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_G01,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_G01,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_G01,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_G01,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_G01,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_G45,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_G45,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_G45,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_G45,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_G45,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_G45,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_G45,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_G45,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X4_F26,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X4_F26,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X4_F26,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X4_F26,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X4_F26,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X4_F26,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X4_F26,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X4_F26,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X4_G02,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_X4_G02,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_X4_G02,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_X4_G02,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_X4_G02,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_X4_G02,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_X4_G02,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_X4_G02,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_X5_E53,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_E53,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_E53,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_E53,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_E53,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_E53,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_E53,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_E53,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_E70,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_E70,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_E70,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_E70,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_E70,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_E70,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_E70,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_E70,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_F15,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_F15,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_F15,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_F15,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_F15,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_F15,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_F15,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_F15,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_G05,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_G05,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_G05,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_G05,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_G05,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_G05,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_G05,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_G05,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_E71,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_E71,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_E71,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_E71,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_E71,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_E71,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_E71,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_E71,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_F16,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_F16,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_F16,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_F16,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_F16,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_F16,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_F16,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_F16,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_G06,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_G06,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_G06,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_G06,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_G06,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_G06,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_G06,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_G06,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X7_G07,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X7_G07,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X7_G07,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X7_G07,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X7_G07,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X7_G07,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X7_G07,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X7_G07,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_XM_G09,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_XM_G09,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_XM_G09,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_XM_G09,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_XM_G09,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_XM_G09,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_XM_G09,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_XM_G09,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z1_E30Z,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_Z1_E30Z,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_Z1_E30Z,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_Z1_E30Z,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_Z1_E30Z,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_Z1_E30Z,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_Z1_E30Z,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_Z1_E30Z,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_Z3_E36,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_Z3_E36,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_Z3_E36,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_Z3_E36,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_Z3_E36,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_Z3_E36,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_Z3_E36,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_Z3_E36,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_Z4_E85,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z4_E85,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z4_E85,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z4_E85,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z4_E85,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z4_E85,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z4_E85,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z4_E85,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z4_E89,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z4_E89,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z4_E89,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z4_E89,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z4_E89,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z4_E89,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z4_E89,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z4_E89,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z4_G29,horsepower_hp,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z4_G29,torque_nm,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z4_G29,displacement_cc,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z4_G29,dimensions,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z4_G29,weight_kg,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z4_G29,top_speed_kmh,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z4_G29,acceleration_0_100_s,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z4_G29,electric_range_km,BMW AG Technical Specifications & Homologation Documentation,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z8_E52,horsepower_hp,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_Z8_E52,torque_nm,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_Z8_E52,displacement_cc,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_Z8_E52,dimensions,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_Z8_E52,weight_kg,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_Z8_E52,top_speed_kmh,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_Z8_E52,acceleration_0_100_s,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_Z8_E52,electric_range_km,BMW Group Classic Historic Vehicle Specifications,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High

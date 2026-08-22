@@ -1,0 +1,102 @@
+generation_id,model_name,vehicle_type,production_start,production_end,status
+BMW_3-15_DA2,3/15,Coupe / Cabriolet / Saloon,1929,1932,Discontinued
+BMW_3-20_AM,3/20,Saloon / Cabriolet,1932,1934,Discontinued
+BMW_303,303,Saloon / Cabriolet,1933,1934,Discontinued
+BMW_309,309,Saloon / Cabriolet,1934,1936,Discontinued
+BMW_315,315,Saloon / Roadster / Cabriolet,1934,1937,Discontinued
+BMW_319,319,Saloon / Roadster / Cabriolet,1935,1937,Discontinued
+BMW_329,329,Convertible,1936,1937,Discontinued
+BMW_320,320,Saloon / Cabriolet,1937,1938,Discontinued
+BMW_321,321,Saloon / Cabriolet,1938,1941,Discontinued
+BMW_326,326,Sedan / Cabriolet,1936,1941,Discontinued
+BMW_327,327,Coupe / Convertible,1937,1941,Discontinued
+BMW_328,328,Roadster,1936,1940,Discontinued
+BMW_335,335,Sedan / Cabriolet,1939,1941,Discontinued
+BMW_501,501,Sedan,1952,1958,Discontinued
+BMW_502,502,Sedan / Coupe / Cabriolet,1954,1961,Discontinued
+BMW_503,503,Coupe / Convertible,1956,1959,Discontinued
+BMW_507,507,Roadster,1956,1959,Discontinued
+BMW_3200_CS,3200 CS,Coupe,1962,1965,Discontinued
+BMW_ISETTA,Isetta,Microcar,1955,1962,Discontinued
+BMW_600,600,Microcar,1957,1959,Discontinued
+BMW_700,700,Sedan / Coupe / Convertible,1959,1965,Discontinued
+BMW_NK_SEDAN,New Class Sedan,Sedan,1962,1972,Discontinued
+BMW_NK_COUPE,New Class Coupe,Coupe,1965,1969,Discontinued
+BMW_02_SERIES,02 Series,Coupe / Hatchback / Convertible,1966,1977,Discontinued
+BMW_E3_SEDAN,New Six (E3),Sedan,1968,1977,Discontinued
+BMW_E9_COUPE,New Six Coupe (E9),Coupe,1968,1975,Discontinued
+BMW_M1_E26,M1,Coupe,1978,1981,Discontinued
+BMW_3_E21,3 Series,Sedan,1975,1983,Discontinued
+BMW_3_E30,3 Series,Sedan / Wagon / Coupe / Convertible,1982,1994,Discontinued
+BMW_3_E36,3 Series,Sedan / Wagon / Coupe / Convertible / Hatchback,1990,2000,Discontinued
+BMW_3_E46,3 Series,Sedan / Wagon / Coupe / Convertible / Hatchback,1997,2006,Discontinued
+BMW_3_E90,3 Series,Sedan / Wagon / Coupe / Convertible,2005,2013,Discontinued
+BMW_3_F30,3 Series,Sedan / Wagon / Gran Turismo,2011,2019,Discontinued
+BMW_3_G20,3 Series,Sedan / Wagon,2018,,Active
+BMW_5_E12,5 Series,Sedan,1972,1981,Discontinued
+BMW_5_E28,5 Series,Sedan,1981,1988,Discontinued
+BMW_5_E34,5 Series,Sedan / Wagon,1987,1996,Discontinued
+BMW_5_E39,5 Series,Sedan / Wagon,1995,2004,Discontinued
+BMW_5_E60,5 Series,Sedan / Wagon,2003,2010,Discontinued
+BMW_5_F10,5 Series,Sedan / Wagon / Gran Turismo,2010,2017,Discontinued
+BMW_5_G30,5 Series,Sedan / Wagon,2017,2023,Discontinued
+BMW_5_G60,5 Series,Sedan / Wagon,2023,,Active
+BMW_7_E23,7 Series,Sedan,1977,1986,Discontinued
+BMW_7_E32,7 Series,Sedan,1986,1994,Discontinued
+BMW_7_E38,7 Series,Sedan,1994,2001,Discontinued
+BMW_7_E65,7 Series,Sedan,2001,2008,Discontinued
+BMW_7_F01,7 Series,Sedan,2008,2015,Discontinued
+BMW_7_G11,7 Series,Sedan,2015,2022,Discontinued
+BMW_7_G70,7 Series,Sedan,2022,,Active
+BMW_6_E24,6 Series,Coupe,1976,1989,Discontinued
+BMW_6_E63,6 Series,Coupe / Convertible,2003,2010,Discontinued
+BMW_6_F12,6 Series,Coupe / Convertible / Gran Coupe,2011,2018,Discontinued
+BMW_6_G32,6 Series,Gran Turismo,2017,2023,Discontinued
+BMW_8_E31,8 Series,Coupe,1989,1999,Discontinued
+BMW_8_G15,8 Series,Coupe / Convertible / Gran Coupe,2018,,Active
+BMW_1_E87,1 Series,Hatchback / Coupe / Convertible,2004,2013,Discontinued
+BMW_1_F20,1 Series,Hatchback,2011,2019,Discontinued
+BMW_1_F40,1 Series,Hatchback,2019,2024,Discontinued
+BMW_1_F70,1 Series,Hatchback,2024,,Active
+BMW_2_F22,2 Series,Coupe / Convertible,2014,2021,Discontinued
+BMW_2_F45,2 Series Active Tourer,Hatchback,2014,2021,Discontinued
+BMW_2_F44,2 Series Gran Coupe,Sedan,2020,,Active
+BMW_2_G42,2 Series,Coupe,2021,,Active
+BMW_2_U06,2 Series Active Tourer,Hatchback,2021,,Active
+BMW_4_F32,4 Series,Coupe / Convertible / Gran Coupe,2013,2020,Discontinued
+BMW_4_G22,4 Series,Coupe / Convertible / Gran Coupe,2020,,Active
+BMW_X1_E84,X1,SUV,2009,2015,Discontinued
+BMW_X1_F48,X1,SUV,2015,2022,Discontinued
+BMW_X1_U11,X1,SUV,2022,,Active
+BMW_X2_F39,X2,SUV,2017,2023,Discontinued
+BMW_X2_U10,X2,SUV,2023,,Active
+BMW_X3_E83,X3,SUV,2003,2010,Discontinued
+BMW_X3_F25,X3,SUV,2010,2017,Discontinued
+BMW_X3_G01,X3,SUV,2017,2024,Discontinued
+BMW_X3_G45,X3,SUV,2024,,Active
+BMW_X4_F26,X4,SUV,2014,2018,Discontinued
+BMW_X4_G02,X4,SUV,2018,,Active
+BMW_X5_E53,X5,SUV,1999,2006,Discontinued
+BMW_X5_E70,X5,SUV,2006,2013,Discontinued
+BMW_X5_F15,X5,SUV,2013,2018,Discontinued
+BMW_X5_G05,X5,SUV,2018,,Active
+BMW_X6_E71,X6,SUV,2008,2014,Discontinued
+BMW_X6_F16,X6,SUV,2014,2019,Discontinued
+BMW_X6_G06,X6,SUV,2019,,Active
+BMW_X7_G07,X7,SUV,2018,,Active
+BMW_XM_G09,XM,SUV,2022,,Active
+BMW_Z1_E30Z,Z1,Roadster,1989,1991,Discontinued
+BMW_Z3_E36,Z3,Roadster / Coupe,1995,2002,Discontinued
+BMW_Z4_E85,Z4,Roadster / Coupe,2002,2008,Discontinued
+BMW_Z4_E89,Z4,Roadster,2009,2016,Discontinued
+BMW_Z4_G29,Z4,Roadster,2018,,Active
+BMW_Z8_E52,Z8,Roadster,2000,2003,Discontinued
+BMW_I3_I01,i3,Hatchback,2013,2022,Discontinued
+BMW_I8_I12,i8,Coupe / Roadster,2014,2020,Discontinued
+BMW_IX_I20,iX,SUV,2021,,Active
+BMW_I4_G26,i4,Gran Coupe,2021,,Active
+BMW_IX1_U11,iX1,SUV,2022,,Active
+BMW_IX2_U10,iX2,SUV,2023,,Active
+BMW_IX3_G08,iX3,SUV,2020,,Active
+BMW_I5_G60,i5,Sedan / Wagon,2023,,Active
+BMW_I7_G70,i7,Sedan,2022,,Active

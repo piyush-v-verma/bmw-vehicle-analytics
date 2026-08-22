@@ -1,0 +1,506 @@
+generation_id,field_name,source_name,source_url,access_date,confidence
+BMW_3-15_DA2,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3-15_DA2,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3-15_DA2,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3-15_DA2,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3-15_DA2,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3-20_AM,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3-20_AM,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3-20_AM,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3-20_AM,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3-20_AM,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_303,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_303,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_303,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_303,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_303,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_309,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_309,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_309,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_309,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_309,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_315,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_315,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_315,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_315,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_315,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_319,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_319,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_319,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_319,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_319,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_329,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_329,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_329,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_329,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_329,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_320,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_320,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_320,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_320,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_320,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_321,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_321,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_321,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_321,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_321,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_326,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_326,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_326,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_326,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_326,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_327,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_327,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_327,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_327,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_327,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_328,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_328,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_328,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_328,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_328,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_335,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_335,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_335,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_335,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_335,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_501,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_501,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_501,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_501,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_501,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_502,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_502,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_502,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_502,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_502,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_503,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_503,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_503,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_503,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_503,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_507,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_507,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_507,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_507,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_507,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3200_CS,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3200_CS,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3200_CS,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3200_CS,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3200_CS,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_ISETTA,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_ISETTA,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_ISETTA,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_ISETTA,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_ISETTA,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_600,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_600,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_600,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_600,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_600,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_700,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_700,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_700,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_700,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_700,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_NK_SEDAN,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_NK_SEDAN,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_NK_SEDAN,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_NK_SEDAN,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_NK_SEDAN,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_NK_COUPE,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_NK_COUPE,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_NK_COUPE,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_NK_COUPE,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_NK_COUPE,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_02_SERIES,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_02_SERIES,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_02_SERIES,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_02_SERIES,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_02_SERIES,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_E3_SEDAN,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_E3_SEDAN,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_E3_SEDAN,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_E3_SEDAN,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_E3_SEDAN,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_E9_COUPE,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_E9_COUPE,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_E9_COUPE,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_E9_COUPE,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_E9_COUPE,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_M1_E26,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_M1_E26,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_M1_E26,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_M1_E26,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_M1_E26,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E21,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_E21,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_E21,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_E21,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_E21,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_E30,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E30,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E30,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E30,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E30,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E36,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E36,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E36,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E36,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E36,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E46,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_E46,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_E46,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_E46,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_E46,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_E90,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E90,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E90,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E90,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_E90,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_3_F30,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_F30,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_F30,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_F30,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_F30,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_G20,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_G20,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_G20,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_G20,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_3_G20,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E12,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E12,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E12,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E12,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E12,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E28,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E28,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E28,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E28,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E28,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E34,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_5_E34,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_5_E34,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_5_E34,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_5_E34,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_5_E39,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_5_E39,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_5_E39,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_5_E39,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_5_E39,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_5_E60,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E60,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E60,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E60,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_E60,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_F10,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_F10,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_F10,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_F10,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_F10,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_G30,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_G30,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_G30,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_G30,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_G30,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_G60,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_G60,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_G60,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_G60,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_5_G60,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_E23,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_E23,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_E23,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_E23,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_E23,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_E32,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_7_E32,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_7_E32,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_7_E32,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_7_E32,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_7_E38,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_7_E38,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_7_E38,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_7_E38,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_7_E38,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_7_E65,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_E65,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_E65,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_E65,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_E65,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_F01,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_F01,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_F01,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_F01,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_F01,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_G11,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_G11,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_G11,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_G11,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_G11,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_G70,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_G70,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_G70,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_G70,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_7_G70,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_E24,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_E24,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_E24,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_E24,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_E24,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_E63,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_E63,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_E63,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_E63,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_E63,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_F12,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_F12,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_F12,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_F12,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_F12,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_G32,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_G32,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_G32,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_G32,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_6_G32,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_8_E31,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_8_E31,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_8_E31,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_8_E31,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_8_E31,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_8_G15,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_8_G15,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_8_G15,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_8_G15,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_8_G15,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_E87,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_E87,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_E87,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_E87,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_E87,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F20,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F20,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F20,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F20,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F20,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F40,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F40,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F40,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F40,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F40,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F70,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F70,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F70,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F70,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_1_F70,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F22,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F22,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F22,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F22,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F22,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F45,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F45,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F45,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F45,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F45,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F44,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F44,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F44,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F44,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_F44,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_G42,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_G42,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_G42,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_G42,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_G42,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_U06,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_U06,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_U06,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_U06,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_2_U06,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_4_F32,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_4_F32,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_4_F32,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_4_F32,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_4_F32,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_4_G22,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_4_G22,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_4_G22,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_4_G22,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_4_G22,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_E84,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_E84,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_E84,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_E84,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_E84,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_F48,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_F48,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_F48,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_F48,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_F48,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_U11,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_U11,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_U11,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_U11,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X1_U11,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X2_F39,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X2_F39,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X2_F39,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X2_F39,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X2_F39,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X2_U10,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X2_U10,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X2_U10,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X2_U10,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X2_U10,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_E83,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_E83,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_E83,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_E83,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_E83,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_F25,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_F25,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_F25,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_F25,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_F25,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_G01,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_G01,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_G01,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_G01,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_G01,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_G45,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_G45,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_G45,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_G45,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X3_G45,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X4_F26,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X4_F26,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X4_F26,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X4_F26,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X4_F26,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X4_G02,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_X4_G02,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_X4_G02,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_X4_G02,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_X4_G02,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_X5_E53,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_E53,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_E53,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_E53,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_E53,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_E70,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_E70,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_E70,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_E70,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_E70,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_F15,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_F15,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_F15,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_F15,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_F15,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_G05,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_G05,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_G05,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_G05,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X5_G05,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_E71,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_E71,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_E71,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_E71,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_E71,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_F16,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_F16,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_F16,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_F16,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_F16,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_G06,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_G06,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_G06,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_G06,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X6_G06,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X7_G07,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X7_G07,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X7_G07,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X7_G07,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_X7_G07,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_XM_G09,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_XM_G09,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_XM_G09,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_XM_G09,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_XM_G09,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z1_E30Z,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_Z1_E30Z,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_Z1_E30Z,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_Z1_E30Z,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_Z1_E30Z,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_Z3_E36,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_Z3_E36,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_Z3_E36,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_Z3_E36,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_Z3_E36,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_Z4_E85,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z4_E85,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z4_E85,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z4_E85,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z4_E85,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z4_E89,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z4_E89,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z4_E89,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z4_E89,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z4_E89,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z4_G29,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z4_G29,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z4_G29,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z4_G29,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z4_G29,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_Z8_E52,model_name,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_Z8_E52,vehicle_type,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_Z8_E52,production_start,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_Z8_E52,production_end,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_Z8_E52,status,BMW Group Classic Historic Archive,https://www.bmwgroup-classic.com/en/history/historic-modeloverview-bmw.html,2026-08-22,High
+BMW_I3_I01,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I3_I01,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I3_I01,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I3_I01,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I3_I01,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I8_I12,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I8_I12,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I8_I12,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I8_I12,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I8_I12,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX_I20,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX_I20,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX_I20,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX_I20,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX_I20,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I4_G26,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I4_G26,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I4_G26,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I4_G26,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I4_G26,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX1_U11,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX1_U11,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX1_U11,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX1_U11,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX1_U11,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX2_U10,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX2_U10,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX2_U10,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX2_U10,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX2_U10,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX3_G08,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX3_G08,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX3_G08,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX3_G08,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_IX3_G08,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I5_G60,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I5_G60,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I5_G60,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I5_G60,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I5_G60,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I7_G70,model_name,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I7_G70,vehicle_type,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I7_G70,production_start,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I7_G70,production_end,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
+BMW_I7_G70,status,BMW Group Corporate Communications & Technical Data Archive,https://www.press.bmwgroup.com,2026-08-22,High
