@@ -1,0 +1,1012 @@
+[
+  {
+    "index": 1,
+    "generation_id": "BMW_3-15_DA2",
+    "model_name": "3/15",
+    "generation_code": "3-15 DA2",
+    "full_generation_name": "3/15 DA 2",
+    "production_years": "1929–1932",
+    "body_style": "Coupe / Cabriolet / Saloon",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 2,
+    "generation_id": "BMW_3-20_AM",
+    "model_name": "3/20",
+    "generation_code": "3-20 AM",
+    "full_generation_name": "3/20 PS",
+    "production_years": "1932–1934",
+    "body_style": "Saloon / Cabriolet",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 3,
+    "generation_id": "BMW_303",
+    "model_name": "303",
+    "generation_code": "303",
+    "full_generation_name": "303",
+    "production_years": "1933–1934",
+    "body_style": "Saloon / Cabriolet",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 4,
+    "generation_id": "BMW_309",
+    "model_name": "309",
+    "generation_code": "309",
+    "full_generation_name": "309",
+    "production_years": "1934–1936",
+    "body_style": "Saloon / Cabriolet",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 5,
+    "generation_id": "BMW_315",
+    "model_name": "315",
+    "generation_code": "315",
+    "full_generation_name": "315",
+    "production_years": "1934–1937",
+    "body_style": "Saloon / Roadster / Cabriolet",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 6,
+    "generation_id": "BMW_319",
+    "model_name": "319",
+    "generation_code": "319",
+    "full_generation_name": "319",
+    "production_years": "1935–1937",
+    "body_style": "Saloon / Roadster / Cabriolet",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 7,
+    "generation_id": "BMW_329",
+    "model_name": "329",
+    "generation_code": "329",
+    "full_generation_name": "329",
+    "production_years": "1936–1937",
+    "body_style": "Convertible",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 8,
+    "generation_id": "BMW_320",
+    "model_name": "320",
+    "generation_code": "320",
+    "full_generation_name": "320",
+    "production_years": "1937–1938",
+    "body_style": "Saloon / Cabriolet",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 9,
+    "generation_id": "BMW_321",
+    "model_name": "321",
+    "generation_code": "321",
+    "full_generation_name": "321",
+    "production_years": "1938–1941",
+    "body_style": "Saloon / Cabriolet",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 10,
+    "generation_id": "BMW_326",
+    "model_name": "326",
+    "generation_code": "326",
+    "full_generation_name": "326",
+    "production_years": "1936–1941",
+    "body_style": "Sedan / Cabriolet",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 11,
+    "generation_id": "BMW_327",
+    "model_name": "327",
+    "generation_code": "327",
+    "full_generation_name": "327",
+    "production_years": "1937–1941",
+    "body_style": "Coupe / Convertible",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 12,
+    "generation_id": "BMW_328",
+    "model_name": "328",
+    "generation_code": "328",
+    "full_generation_name": "328",
+    "production_years": "1936–1940",
+    "body_style": "Roadster",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 13,
+    "generation_id": "BMW_335",
+    "model_name": "335",
+    "generation_code": "335",
+    "full_generation_name": "335",
+    "production_years": "1939–1941",
+    "body_style": "Sedan / Cabriolet",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 14,
+    "generation_id": "BMW_501",
+    "model_name": "501",
+    "generation_code": "501",
+    "full_generation_name": "501",
+    "production_years": "1952–1958",
+    "body_style": "Sedan",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 15,
+    "generation_id": "BMW_502",
+    "model_name": "502",
+    "generation_code": "502",
+    "full_generation_name": "502",
+    "production_years": "1954–1961",
+    "body_style": "Sedan / Coupe / Cabriolet",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 16,
+    "generation_id": "BMW_503",
+    "model_name": "503",
+    "generation_code": "503",
+    "full_generation_name": "503",
+    "production_years": "1956–1959",
+    "body_style": "Coupe / Convertible",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 17,
+    "generation_id": "BMW_507",
+    "model_name": "507",
+    "generation_code": "507",
+    "full_generation_name": "507",
+    "production_years": "1956–1959",
+    "body_style": "Roadster",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 18,
+    "generation_id": "BMW_3200_CS",
+    "model_name": "3200 CS",
+    "generation_code": "3200 CS",
+    "full_generation_name": "3200 CS",
+    "production_years": "1962–1965",
+    "body_style": "Coupe",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 19,
+    "generation_id": "BMW_ISETTA",
+    "model_name": "Isetta",
+    "generation_code": "ISETTA",
+    "full_generation_name": "Isetta 250",
+    "production_years": "1955–1962",
+    "body_style": "Microcar",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 20,
+    "generation_id": "BMW_600",
+    "model_name": "600",
+    "generation_code": "600",
+    "full_generation_name": "600",
+    "production_years": "1957–1959",
+    "body_style": "Microcar",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 21,
+    "generation_id": "BMW_700",
+    "model_name": "700",
+    "generation_code": "700",
+    "full_generation_name": "700",
+    "production_years": "1959–1965",
+    "body_style": "Sedan / Coupe / Convertible",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 22,
+    "generation_id": "BMW_NK_SEDAN",
+    "model_name": "New Class Sedan",
+    "generation_code": "NK SEDAN",
+    "full_generation_name": "New Class 1500",
+    "production_years": "1962–1972",
+    "body_style": "Sedan",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 23,
+    "generation_id": "BMW_NK_COUPE",
+    "model_name": "New Class Coupe",
+    "generation_code": "NK COUPE",
+    "full_generation_name": "2000 CS",
+    "production_years": "1965–1969",
+    "body_style": "Coupe",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 24,
+    "generation_id": "BMW_02_SERIES",
+    "model_name": "02 Series",
+    "generation_code": "02 SERIES",
+    "full_generation_name": "1600-2",
+    "production_years": "1966–1977",
+    "body_style": "Coupe / Hatchback / Convertible",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 25,
+    "generation_id": "BMW_E3_SEDAN",
+    "model_name": "New Six (E3)",
+    "generation_code": "E3 SEDAN",
+    "full_generation_name": "2500 (E3)",
+    "production_years": "1968–1977",
+    "body_style": "Sedan",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 26,
+    "generation_id": "BMW_E9_COUPE",
+    "model_name": "New Six Coupe (E9)",
+    "generation_code": "E9 COUPE",
+    "full_generation_name": "3.0 CSi (E9)",
+    "production_years": "1968–1975",
+    "body_style": "Coupe",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 27,
+    "generation_id": "BMW_M1_E26",
+    "model_name": "M1",
+    "generation_code": "M1 E26",
+    "full_generation_name": "M1 (E26)",
+    "production_years": "1978–1981",
+    "body_style": "Coupe",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 28,
+    "generation_id": "BMW_3_E21",
+    "model_name": "3 Series",
+    "generation_code": "3 E21",
+    "full_generation_name": "3 Series (E21)",
+    "production_years": "1975–1983",
+    "body_style": "Sedan",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 29,
+    "generation_id": "BMW_3_E30",
+    "model_name": "3 Series",
+    "generation_code": "3 E30",
+    "full_generation_name": "3 Series (E30)",
+    "production_years": "1982–1994",
+    "body_style": "Sedan / Wagon / Coupe / Convertible",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 30,
+    "generation_id": "BMW_3_E36",
+    "model_name": "3 Series",
+    "generation_code": "3 E36",
+    "full_generation_name": "3 Series (E36)",
+    "production_years": "1990–2000",
+    "body_style": "Sedan / Wagon / Coupe / Convertible / Hatchback",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 31,
+    "generation_id": "BMW_3_E46",
+    "model_name": "3 Series",
+    "generation_code": "3 E46",
+    "full_generation_name": "3 Series (E46)",
+    "production_years": "1997–2006",
+    "body_style": "Sedan / Wagon / Coupe / Convertible / Hatchback",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 32,
+    "generation_id": "BMW_3_E90",
+    "model_name": "3 Series",
+    "generation_code": "3 E90",
+    "full_generation_name": "3 Series (E90)",
+    "production_years": "2005–2013",
+    "body_style": "Sedan / Wagon / Coupe / Convertible",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 33,
+    "generation_id": "BMW_3_F30",
+    "model_name": "3 Series",
+    "generation_code": "3 F30",
+    "full_generation_name": "3 Series (F30)",
+    "production_years": "2011–2019",
+    "body_style": "Sedan / Wagon / Gran Turismo",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 34,
+    "generation_id": "BMW_3_G20",
+    "model_name": "3 Series",
+    "generation_code": "3 G20",
+    "full_generation_name": "3 Series (G20)",
+    "production_years": "2018–Present",
+    "body_style": "Sedan / Wagon",
+    "status": "Active\r"
+  },
+  {
+    "index": 35,
+    "generation_id": "BMW_5_E12",
+    "model_name": "5 Series",
+    "generation_code": "5 E12",
+    "full_generation_name": "5 Series (E12)",
+    "production_years": "1972–1981",
+    "body_style": "Sedan",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 36,
+    "generation_id": "BMW_5_E28",
+    "model_name": "5 Series",
+    "generation_code": "5 E28",
+    "full_generation_name": "5 Series (E28)",
+    "production_years": "1981–1988",
+    "body_style": "Sedan",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 37,
+    "generation_id": "BMW_5_E34",
+    "model_name": "5 Series",
+    "generation_code": "5 E34",
+    "full_generation_name": "5 Series (E34)",
+    "production_years": "1987–1996",
+    "body_style": "Sedan / Wagon",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 38,
+    "generation_id": "BMW_5_E39",
+    "model_name": "5 Series",
+    "generation_code": "5 E39",
+    "full_generation_name": "5 Series (E39)",
+    "production_years": "1995–2004",
+    "body_style": "Sedan / Wagon",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 39,
+    "generation_id": "BMW_5_E60",
+    "model_name": "5 Series",
+    "generation_code": "5 E60",
+    "full_generation_name": "5 Series (E60)",
+    "production_years": "2003–2010",
+    "body_style": "Sedan / Wagon",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 40,
+    "generation_id": "BMW_5_F10",
+    "model_name": "5 Series",
+    "generation_code": "5 F10",
+    "full_generation_name": "5 Series (F10)",
+    "production_years": "2010–2017",
+    "body_style": "Sedan / Wagon / Gran Turismo",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 41,
+    "generation_id": "BMW_5_G30",
+    "model_name": "5 Series",
+    "generation_code": "5 G30",
+    "full_generation_name": "5 Series (G30)",
+    "production_years": "2017–2023",
+    "body_style": "Sedan / Wagon",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 42,
+    "generation_id": "BMW_5_G60",
+    "model_name": "5 Series",
+    "generation_code": "5 G60",
+    "full_generation_name": "5 Series (G60)",
+    "production_years": "2023–Present",
+    "body_style": "Sedan / Wagon",
+    "status": "Active\r"
+  },
+  {
+    "index": 43,
+    "generation_id": "BMW_7_E23",
+    "model_name": "7 Series",
+    "generation_code": "7 E23",
+    "full_generation_name": "7 Series (E23)",
+    "production_years": "1977–1986",
+    "body_style": "Sedan",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 44,
+    "generation_id": "BMW_7_E32",
+    "model_name": "7 Series",
+    "generation_code": "7 E32",
+    "full_generation_name": "7 Series (E32)",
+    "production_years": "1986–1994",
+    "body_style": "Sedan",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 45,
+    "generation_id": "BMW_7_E38",
+    "model_name": "7 Series",
+    "generation_code": "7 E38",
+    "full_generation_name": "7 Series (E38)",
+    "production_years": "1994–2001",
+    "body_style": "Sedan",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 46,
+    "generation_id": "BMW_7_E65",
+    "model_name": "7 Series",
+    "generation_code": "7 E65",
+    "full_generation_name": "7 Series (E65)",
+    "production_years": "2001–2008",
+    "body_style": "Sedan",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 47,
+    "generation_id": "BMW_7_F01",
+    "model_name": "7 Series",
+    "generation_code": "7 F01",
+    "full_generation_name": "7 Series (F01)",
+    "production_years": "2008–2015",
+    "body_style": "Sedan",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 48,
+    "generation_id": "BMW_7_G11",
+    "model_name": "7 Series",
+    "generation_code": "7 G11",
+    "full_generation_name": "7 Series (G11)",
+    "production_years": "2015–2022",
+    "body_style": "Sedan",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 49,
+    "generation_id": "BMW_7_G70",
+    "model_name": "7 Series",
+    "generation_code": "7 G70",
+    "full_generation_name": "7 Series (G70)",
+    "production_years": "2022–Present",
+    "body_style": "Sedan",
+    "status": "Active\r"
+  },
+  {
+    "index": 50,
+    "generation_id": "BMW_6_E24",
+    "model_name": "6 Series",
+    "generation_code": "6 E24",
+    "full_generation_name": "6 Series (E24)",
+    "production_years": "1976–1989",
+    "body_style": "Coupe",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 51,
+    "generation_id": "BMW_6_E63",
+    "model_name": "6 Series",
+    "generation_code": "6 E63",
+    "full_generation_name": "6 Series (E63)",
+    "production_years": "2003–2010",
+    "body_style": "Coupe / Convertible",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 52,
+    "generation_id": "BMW_6_F12",
+    "model_name": "6 Series",
+    "generation_code": "6 F12",
+    "full_generation_name": "6 Series (F12)",
+    "production_years": "2011–2018",
+    "body_style": "Coupe / Convertible / Gran Coupe",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 53,
+    "generation_id": "BMW_6_G32",
+    "model_name": "6 Series",
+    "generation_code": "6 G32",
+    "full_generation_name": "6 Series GT (G32)",
+    "production_years": "2017–2023",
+    "body_style": "Gran Turismo",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 54,
+    "generation_id": "BMW_8_E31",
+    "model_name": "8 Series",
+    "generation_code": "8 E31",
+    "full_generation_name": "8 Series (E31)",
+    "production_years": "1989–1999",
+    "body_style": "Coupe",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 55,
+    "generation_id": "BMW_8_G15",
+    "model_name": "8 Series",
+    "generation_code": "8 G15",
+    "full_generation_name": "8 Series (G15)",
+    "production_years": "2018–Present",
+    "body_style": "Coupe / Convertible / Gran Coupe",
+    "status": "Active\r"
+  },
+  {
+    "index": 56,
+    "generation_id": "BMW_1_E87",
+    "model_name": "1 Series",
+    "generation_code": "1 E87",
+    "full_generation_name": "1 Series (E87)",
+    "production_years": "2004–2013",
+    "body_style": "Hatchback / Coupe / Convertible",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 57,
+    "generation_id": "BMW_1_F20",
+    "model_name": "1 Series",
+    "generation_code": "1 F20",
+    "full_generation_name": "1 Series (F20)",
+    "production_years": "2011–2019",
+    "body_style": "Hatchback",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 58,
+    "generation_id": "BMW_1_F40",
+    "model_name": "1 Series",
+    "generation_code": "1 F40",
+    "full_generation_name": "1 Series (F40)",
+    "production_years": "2019–2024",
+    "body_style": "Hatchback",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 59,
+    "generation_id": "BMW_1_F70",
+    "model_name": "1 Series",
+    "generation_code": "1 F70",
+    "full_generation_name": "1 Series (F70)",
+    "production_years": "2024–Present",
+    "body_style": "Hatchback",
+    "status": "Active\r"
+  },
+  {
+    "index": 60,
+    "generation_id": "BMW_2_F22",
+    "model_name": "2 Series",
+    "generation_code": "2 F22",
+    "full_generation_name": "2 Series (F22)",
+    "production_years": "2014–2021",
+    "body_style": "Coupe / Convertible",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 61,
+    "generation_id": "BMW_2_F45",
+    "model_name": "2 Series Active Tourer",
+    "generation_code": "2 F45",
+    "full_generation_name": "2 Series Active Tourer (F45)",
+    "production_years": "2014–2021",
+    "body_style": "Hatchback",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 62,
+    "generation_id": "BMW_2_F44",
+    "model_name": "2 Series Gran Coupe",
+    "generation_code": "2 F44",
+    "full_generation_name": "2 Series Gran Coupe (F44)",
+    "production_years": "2020–Present",
+    "body_style": "Sedan",
+    "status": "Active\r"
+  },
+  {
+    "index": 63,
+    "generation_id": "BMW_2_G42",
+    "model_name": "2 Series",
+    "generation_code": "2 G42",
+    "full_generation_name": "2 Series Coupe (G42)",
+    "production_years": "2021–Present",
+    "body_style": "Coupe",
+    "status": "Active\r"
+  },
+  {
+    "index": 64,
+    "generation_id": "BMW_2_U06",
+    "model_name": "2 Series Active Tourer",
+    "generation_code": "2 U06",
+    "full_generation_name": "2 Series Active Tourer (U06)",
+    "production_years": "2021–Present",
+    "body_style": "Hatchback",
+    "status": "Active\r"
+  },
+  {
+    "index": 65,
+    "generation_id": "BMW_4_F32",
+    "model_name": "4 Series",
+    "generation_code": "4 F32",
+    "full_generation_name": "4 Series (F32)",
+    "production_years": "2013–2020",
+    "body_style": "Coupe / Convertible / Gran Coupe",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 66,
+    "generation_id": "BMW_4_G22",
+    "model_name": "4 Series",
+    "generation_code": "4 G22",
+    "full_generation_name": "4 Series (G22)",
+    "production_years": "2020–Present",
+    "body_style": "Coupe / Convertible / Gran Coupe",
+    "status": "Active\r"
+  },
+  {
+    "index": 67,
+    "generation_id": "BMW_X1_E84",
+    "model_name": "X1",
+    "generation_code": "X1 E84",
+    "full_generation_name": "X1 (E84)",
+    "production_years": "2009–2015",
+    "body_style": "SUV",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 68,
+    "generation_id": "BMW_X1_F48",
+    "model_name": "X1",
+    "generation_code": "X1 F48",
+    "full_generation_name": "X1 (F48)",
+    "production_years": "2015–2022",
+    "body_style": "SUV",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 69,
+    "generation_id": "BMW_X1_U11",
+    "model_name": "X1",
+    "generation_code": "X1 U11",
+    "full_generation_name": "X1 (U11)",
+    "production_years": "2022–Present",
+    "body_style": "SUV",
+    "status": "Active\r"
+  },
+  {
+    "index": 70,
+    "generation_id": "BMW_X2_F39",
+    "model_name": "X2",
+    "generation_code": "X2 F39",
+    "full_generation_name": "X2 (F39)",
+    "production_years": "2017–2023",
+    "body_style": "SUV",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 71,
+    "generation_id": "BMW_X2_U10",
+    "model_name": "X2",
+    "generation_code": "X2 U10",
+    "full_generation_name": "X2 (U10)",
+    "production_years": "2023–Present",
+    "body_style": "SUV",
+    "status": "Active\r"
+  },
+  {
+    "index": 72,
+    "generation_id": "BMW_X3_E83",
+    "model_name": "X3",
+    "generation_code": "X3 E83",
+    "full_generation_name": "X3 (E83)",
+    "production_years": "2003–2010",
+    "body_style": "SUV",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 73,
+    "generation_id": "BMW_X3_F25",
+    "model_name": "X3",
+    "generation_code": "X3 F25",
+    "full_generation_name": "X3 (F25)",
+    "production_years": "2010–2017",
+    "body_style": "SUV",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 74,
+    "generation_id": "BMW_X3_G01",
+    "model_name": "X3",
+    "generation_code": "X3 G01",
+    "full_generation_name": "X3 (G01)",
+    "production_years": "2017–2024",
+    "body_style": "SUV",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 75,
+    "generation_id": "BMW_X3_G45",
+    "model_name": "X3",
+    "generation_code": "X3 G45",
+    "full_generation_name": "X3 (G45)",
+    "production_years": "2024–Present",
+    "body_style": "SUV",
+    "status": "Active\r"
+  },
+  {
+    "index": 76,
+    "generation_id": "BMW_X4_F26",
+    "model_name": "X4",
+    "generation_code": "X4 F26",
+    "full_generation_name": "X4 (F26)",
+    "production_years": "2014–2018",
+    "body_style": "SUV",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 77,
+    "generation_id": "BMW_X4_G02",
+    "model_name": "X4",
+    "generation_code": "X4 G02",
+    "full_generation_name": "X4 (G02)",
+    "production_years": "2018–Present",
+    "body_style": "SUV",
+    "status": "Active\r"
+  },
+  {
+    "index": 78,
+    "generation_id": "BMW_X5_E53",
+    "model_name": "X5",
+    "generation_code": "X5 E53",
+    "full_generation_name": "X5 (E53)",
+    "production_years": "1999–2006",
+    "body_style": "SUV",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 79,
+    "generation_id": "BMW_X5_E70",
+    "model_name": "X5",
+    "generation_code": "X5 E70",
+    "full_generation_name": "X5 (E70)",
+    "production_years": "2006–2013",
+    "body_style": "SUV",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 80,
+    "generation_id": "BMW_X5_F15",
+    "model_name": "X5",
+    "generation_code": "X5 F15",
+    "full_generation_name": "X5 (F15)",
+    "production_years": "2013–2018",
+    "body_style": "SUV",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 81,
+    "generation_id": "BMW_X5_G05",
+    "model_name": "X5",
+    "generation_code": "X5 G05",
+    "full_generation_name": "X5 (G05)",
+    "production_years": "2018–Present",
+    "body_style": "SUV",
+    "status": "Active\r"
+  },
+  {
+    "index": 82,
+    "generation_id": "BMW_X6_E71",
+    "model_name": "X6",
+    "generation_code": "X6 E71",
+    "full_generation_name": "X6 (E71)",
+    "production_years": "2008–2014",
+    "body_style": "SUV",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 83,
+    "generation_id": "BMW_X6_F16",
+    "model_name": "X6",
+    "generation_code": "X6 F16",
+    "full_generation_name": "X6 (F16)",
+    "production_years": "2014–2019",
+    "body_style": "SUV",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 84,
+    "generation_id": "BMW_X6_G06",
+    "model_name": "X6",
+    "generation_code": "X6 G06",
+    "full_generation_name": "X6 (G06)",
+    "production_years": "2019–Present",
+    "body_style": "SUV",
+    "status": "Active\r"
+  },
+  {
+    "index": 85,
+    "generation_id": "BMW_X7_G07",
+    "model_name": "X7",
+    "generation_code": "X7 G07",
+    "full_generation_name": "X7 (G07)",
+    "production_years": "2018–Present",
+    "body_style": "SUV",
+    "status": "Active\r"
+  },
+  {
+    "index": 86,
+    "generation_id": "BMW_XM_G09",
+    "model_name": "XM",
+    "generation_code": "XM G09",
+    "full_generation_name": "XM (G09)",
+    "production_years": "2022–Present",
+    "body_style": "SUV",
+    "status": "Active\r"
+  },
+  {
+    "index": 87,
+    "generation_id": "BMW_Z1_E30Z",
+    "model_name": "Z1",
+    "generation_code": "Z1 E30Z",
+    "full_generation_name": "Z1 (E30Z)",
+    "production_years": "1989–1991",
+    "body_style": "Roadster",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 88,
+    "generation_id": "BMW_Z3_E36",
+    "model_name": "Z3",
+    "generation_code": "Z3 E36",
+    "full_generation_name": "Z3 (E36/7)",
+    "production_years": "1995–2002",
+    "body_style": "Roadster / Coupe",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 89,
+    "generation_id": "BMW_Z4_E85",
+    "model_name": "Z4",
+    "generation_code": "Z4 E85",
+    "full_generation_name": "Z4 (E85)",
+    "production_years": "2002–2008",
+    "body_style": "Roadster / Coupe",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 90,
+    "generation_id": "BMW_Z4_E89",
+    "model_name": "Z4",
+    "generation_code": "Z4 E89",
+    "full_generation_name": "Z4 (E89)",
+    "production_years": "2009–2016",
+    "body_style": "Roadster",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 91,
+    "generation_id": "BMW_Z4_G29",
+    "model_name": "Z4",
+    "generation_code": "Z4 G29",
+    "full_generation_name": "Z4 (G29)",
+    "production_years": "2018–Present",
+    "body_style": "Roadster",
+    "status": "Active\r"
+  },
+  {
+    "index": 92,
+    "generation_id": "BMW_Z8_E52",
+    "model_name": "Z8",
+    "generation_code": "Z8 E52",
+    "full_generation_name": "Z8 (E52)",
+    "production_years": "2000–2003",
+    "body_style": "Roadster",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 93,
+    "generation_id": "BMW_I3_I01",
+    "model_name": "i3",
+    "generation_code": "I3 I01",
+    "full_generation_name": "i3 (I01)",
+    "production_years": "2013–2022",
+    "body_style": "Hatchback",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 94,
+    "generation_id": "BMW_I8_I12",
+    "model_name": "i8",
+    "generation_code": "I8 I12",
+    "full_generation_name": "i8 (I12)",
+    "production_years": "2014–2020",
+    "body_style": "Coupe / Roadster",
+    "status": "Discontinued\r"
+  },
+  {
+    "index": 95,
+    "generation_id": "BMW_IX_I20",
+    "model_name": "iX",
+    "generation_code": "IX I20",
+    "full_generation_name": "iX (I20)",
+    "production_years": "2021–Present",
+    "body_style": "SUV",
+    "status": "Active\r"
+  },
+  {
+    "index": 96,
+    "generation_id": "BMW_I4_G26",
+    "model_name": "i4",
+    "generation_code": "I4 G26",
+    "full_generation_name": "i4 (G26)",
+    "production_years": "2021–Present",
+    "body_style": "Gran Coupe",
+    "status": "Active\r"
+  },
+  {
+    "index": 97,
+    "generation_id": "BMW_IX1_U11",
+    "model_name": "iX1",
+    "generation_code": "IX1 U11",
+    "full_generation_name": "iX1 (U11)",
+    "production_years": "2022–Present",
+    "body_style": "SUV",
+    "status": "Active\r"
+  },
+  {
+    "index": 98,
+    "generation_id": "BMW_IX2_U10",
+    "model_name": "iX2",
+    "generation_code": "IX2 U10",
+    "full_generation_name": "iX2 (U10)",
+    "production_years": "2023–Present",
+    "body_style": "SUV",
+    "status": "Active\r"
+  },
+  {
+    "index": 99,
+    "generation_id": "BMW_IX3_G08",
+    "model_name": "iX3",
+    "generation_code": "IX3 G08",
+    "full_generation_name": "iX3 (G08)",
+    "production_years": "2020–Present",
+    "body_style": "SUV",
+    "status": "Active\r"
+  },
+  {
+    "index": 100,
+    "generation_id": "BMW_I5_G60",
+    "model_name": "i5",
+    "generation_code": "I5 G60",
+    "full_generation_name": "i5 (G60)",
+    "production_years": "2023–Present",
+    "body_style": "Sedan / Wagon",
+    "status": "Active\r"
+  },
+  {
+    "index": 101,
+    "generation_id": "BMW_I7_G70",
+    "model_name": "i7",
+    "generation_code": "I7 G70",
+    "full_generation_name": "i7 (G70)",
+    "production_years": "2022–Present",
+    "body_style": "Sedan",
+    "status": "Active"
+  }
+]

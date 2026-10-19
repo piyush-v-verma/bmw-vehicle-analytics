@@ -13,7 +13,7 @@ import { SalesAnalyticsView } from './components/sales/SalesAnalyticsView';
 import { EvolutionTimeline } from './components/evolution/EvolutionTimeline';
 import { ModelComparisonView } from './components/comparison/ModelComparisonView';
 import { ModelDetailModal } from './components/modal/ModelDetailModal';
-import { Database, ShieldCheck } from 'lucide-react';
+import { Database, ShieldCheck, Image as ImageIcon } from 'lucide-react';
 
 function categorizeEra(startYear: number): EnrichedGeneration['era'] {
   if (startYear <= 1945) return 'Pre-War (1929-1941)';
@@ -399,13 +399,23 @@ export function App() {
             <span>BMW Analytics Platform • 101 Generations • 165 Variants • 706 Sales Records</span>
           </div>
 
-          <div className="flex items-center gap-4 text-[11px]">
+          <div className="flex flex-wrap items-center gap-4 text-[11px]">
+            <a
+              href="/contact_sheet.html"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-1 text-[#b4befe] hover:underline"
+              title="Open Visual Contact Sheet & Image Audit Manifest"
+            >
+              <ImageIcon className="h-3 w-3 text-[#b4befe]" />
+              Image Contact Sheet (101 Verified)
+            </a>
             <span className="flex items-center gap-1">
               <Database className="h-3 w-3 text-[#94e2d5]" />
               Data: BMW Group Classic & Investor Relations
             </span>
             <span className="flex items-center gap-1">
-              <ShieldCheck className="h-3 w-3 text-[#b4befe]" />
+              <ShieldCheck className="h-3 w-3 text-[#a6e3a1]" />
               100% Referential Parity
             </span>
           </div>

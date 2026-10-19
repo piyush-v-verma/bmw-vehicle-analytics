@@ -205,8 +205,15 @@ export const ModelComparisonView: React.FC<ModelComparisonViewProps> = ({
                 </button>
 
                 <div>
-                  <div className="h-28 w-full rounded-xl overflow-hidden bg-black/50 mb-2 border border-white/5">
-                    <img src={car.imageUrl} alt={car.model_name} className="h-full w-full object-cover" />
+                  <div className="h-28 w-full rounded-xl overflow-hidden bg-black/50 mb-2 border border-white/5 relative">
+                    <img
+                      src={car.imageUrl}
+                      alt={car.model_name}
+                      className="h-full w-full object-cover object-center"
+                      onError={(e) => {
+                        (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=80';
+                      }}
+                    />
                   </div>
                   <h4 className="text-sm font-bold text-white truncate font-['Outfit']">{car.model_name}</h4>
                   <p className="text-[11px] text-[#a6adc8] font-mono">{car.generation_id.replace('BMW_', '')} ({car.production_start}{car.production_end ? `–${car.production_end}` : '–pres.'})</p>

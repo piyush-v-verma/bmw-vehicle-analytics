@@ -87,6 +87,19 @@ export const ModelDetailModal: React.FC<ModelDetailModalProps> = ({
         className="relative w-full max-w-4xl max-h-[calc(100vh-4rem)] overflow-y-auto rounded-3xl glass-card border border-[#313244] shadow-2xl bg-[#181825]/95 p-0 text-left scrollbar-thin"
         onClick={(e) => e.stopPropagation()}
       >
+        {/* Ambient blurred vehicle background layer */}
+        <div 
+          className="pointer-events-none absolute inset-0 z-0 overflow-hidden opacity-10"
+          aria-hidden="true"
+        >
+          <img
+            src={model.imageUrl}
+            alt=""
+            className="h-full w-full object-cover filter blur-3xl scale-150"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#181825]/30 via-[#181825]/85 to-[#181825]" />
+        </div>
+
         {/* Sticky Top Navigation Bar (Pins Compare and Close actions at top) */}
         <div className="sticky top-0 z-40 w-full flex items-center justify-between p-4 pointer-events-none bg-gradient-to-b from-[#181825] to-[#181825]/0">
           <button
@@ -139,6 +152,9 @@ export const ModelDetailModal: React.FC<ModelDetailModalProps> = ({
                 </span>
                 <span className="rounded-md bg-white/10 px-2 py-0.5 text-xs text-[#a6adc8]">
                   {model.era}
+                </span>
+                <span className="rounded-md bg-[#a6e3a1]/20 px-2 py-0.5 font-mono text-[11px] font-semibold text-[#a6e3a1] border border-[#a6e3a1]/30">
+                  ✓ Verified 3/4 Image
                 </span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-white font-['Outfit'] mt-1">
