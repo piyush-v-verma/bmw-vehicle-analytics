@@ -39,13 +39,10 @@ export const Header: React.FC<HeaderProps> = ({
     }
   };
 
-  // Keyboard shortcut to focus search and divert to explorer: '/' or Ctrl/Cmd + K
+  // Keyboard shortcut to focus search and divert to explorer: Ctrl/Cmd + K
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (
-        (e.key === '/' && document.activeElement?.tagName !== 'INPUT' && document.activeElement?.tagName !== 'TEXTAREA') ||
-        ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k')
-      ) {
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
         e.preventDefault();
         divertToExplorer();
         searchInputRef.current?.focus();
@@ -110,8 +107,8 @@ export const Header: React.FC<HeaderProps> = ({
             }}
             className="w-full rounded-xl glass-input py-2 pl-9 pr-14 text-xs placeholder:text-[#a6adc8]/60 focus:bg-[#181825] focus:border-[#b4befe]/50 transition-all"
           />
-          <div className="absolute right-2.5 top-1/2 -translate-y-1/2 flex items-center gap-1">
-            {searchQuery ? (
+          <div className="absolute right-2.5 top-1/2 -translate-y-1/2 flex items-center">
+            {searchQuery && (
               <button
                 type="button"
                 onClick={(e) => {
@@ -124,10 +121,6 @@ export const Header: React.FC<HeaderProps> = ({
               >
                 <X className="h-3.5 w-3.5" />
               </button>
-            ) : (
-              <kbd className="pointer-events-none hidden sm:inline-flex items-center rounded border border-[#313244] bg-[#181825] px-1.5 py-0.5 text-[10px] font-mono text-[#a6adc8]/70">
-                /
-              </kbd>
             )}
           </div>
         </div>

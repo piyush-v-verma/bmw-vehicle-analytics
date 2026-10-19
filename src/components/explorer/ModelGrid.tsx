@@ -54,44 +54,55 @@ export const ModelGrid: React.FC<ModelGridProps> = ({
   // Filter & Sort Logic
   const filteredGenerations = useMemo(() => {
     return generations.filter((g) => {
-      // 1. Enhanced multi-token search text match
+      // 1. Precision model, chassis, trim & engine search
       if (effectiveQuery.trim()) {
         const rawQuery = effectiveQuery.toLowerCase().trim();
         const tokens = rawQuery.split(/\s+/).filter(Boolean);
 
-        const cleanGid = g.generation_id.replace(/^BMW_/i, '').replace(/_/g, ' ');
-        const searchableStrings = [
-          g.model_name,
-          g.generation_id,
-          cleanGid,
-          g.vehicle_type,
-          g.era,
-          g.status,
-          String(g.production_start),
-          g.production_end ? String(g.production_end) : 'active current present',
-          ...g.variants.flatMap(v => [
-            v.variant_id,
-            v.variant_id.replace(/_/g, ' '),
-            v.generation,
-            v.series,
-            v.engine,
-            v.engine_type,
-            v.fuel_type,
-            v.transmission,
-            v.drivetrain,
-            `${v.horsepower_hp} hp`,
-            `${v.horsepower_hp}hp`,
-            v.acceleration_0_100_s ? `${v.acceleration_0_100_s}s` : ''
-          ])
-        ];
+        const modelLower = g.model_name.toLowerCase();
+        const cleanGid = g.generation_id.replace(/^BMW_/i, '').toLowerCase();
+        const gidTokens = cleanGid.split(/[_\-]+/).filter(Boolean);
 
-        const combinedText = searchableStrings.join(' ').toLowerCase();
-        const normalizedAlphanumeric = combinedText.replace(/[^a-z0-9]/g, ' ');
+        const trimTokens: string[] = [];
+        const engineTokens: string[] = [];
+        for (const v of g.variants) {
+          if (v.variant_id) {
+            const vParts = v.variant_id.toLowerCase().split(/[_\-]+/).filter(Boolean);
+            trimTokens.push(...vParts);
+          }
+          if (v.engine) {
+            const cleanEng = v.engine.replace(/\s*\([^)]*\)/g, '').toLowerCase().trim();
+            engineTokens.push(cleanEng);
+            const prefix = cleanEng.match(/^([a-z]\d{2})/);
+            if (prefix) engineTokens.push(prefix[1]);
+          }
+        }
+
+        const vehicleTypeLower = g.vehicle_type.toLowerCase();
 
         const allTokensMatch = tokens.every(token => {
-          if (combinedText.includes(token)) return true;
-          const cleanToken = token.replace(/[^a-z0-9]/g, '');
-          if (cleanToken && normalizedAlphanumeric.includes(cleanToken)) return true;
+          // 4-digit year search (e.g. "1998", "2020")
+          if (/^\d{4}$/.test(token)) {
+            const yr = parseInt(token, 10);
+            return g.production_start <= yr && (!g.production_end || g.production_end >= yr);
+          }
+
+          // Model name match (e.g. "3 Series", "507", "M1", "X5", "i4")
+          if (modelLower.includes(token)) return true;
+
+          // Chassis code match (e.g. "e46", "e30", "f30", "g20")
+          if (gidTokens.some(t => t === token || (token.length >= 2 && t.startsWith(token)))) return true;
+          if (cleanGid.replace(/_/g, '').includes(token)) return true;
+
+          // Trim & variant name match (e.g. "m3", "m5", "330i", "m340i", "csl")
+          if (trimTokens.some(t => t === token || (token.length >= 3 && t.startsWith(token)))) return true;
+
+          // Engine code match (e.g. "b58", "s54", "s85", "s58")
+          if (engineTokens.some(e => e === token || (token.length >= 3 && e.includes(token)))) return true;
+
+          // Vehicle body style match (requires at least 4 chars e.g. "sedan", "coupe", "roadster", "wagon", "hatchback")
+          if (token.length >= 4 && vehicleTypeLower.includes(token)) return true;
+
           return false;
         });
 
