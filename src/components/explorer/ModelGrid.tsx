@@ -1,8 +1,8 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { EnrichedGeneration, FilterState } from '../../types/bmw';
 import { ModelCard } from './ModelCard';
 import { FilterBar } from './FilterBar';
-import { SearchX, ChevronLeft, ChevronRight } from 'lucide-react';
+import { SearchX, ChevronLeft, ChevronRight, Search, X } from 'lucide-react';
 import { ModelCardSkeleton } from '../common/ModelCardSkeleton';
 
 interface ModelGridProps {
@@ -46,20 +46,56 @@ export const ModelGrid: React.FC<ModelGridProps> = ({
   // Combine top-level search query with filter state
   const effectiveQuery = searchQuery || filters.searchQuery;
 
+  // Reset pagination to first page whenever search query or filters change
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [effectiveQuery, filters]);
+
   // Filter & Sort Logic
   const filteredGenerations = useMemo(() => {
     return generations.filter((g) => {
-      // 1. Search text match
+      // 1. Enhanced multi-token search text match
       if (effectiveQuery.trim()) {
-        const q = effectiveQuery.toLowerCase().trim();
-        const matchesName = g.model_name.toLowerCase().includes(q);
-        const matchesGid = g.generation_id.toLowerCase().includes(q);
-        const matchesVariant = g.variants.some(v => 
-          v.variant_id.toLowerCase().includes(q) || 
-          v.engine.toLowerCase().includes(q) ||
-          v.generation.toLowerCase().includes(q)
-        );
-        if (!matchesName && !matchesGid && !matchesVariant) return false;
+        const rawQuery = effectiveQuery.toLowerCase().trim();
+        const tokens = rawQuery.split(/\s+/).filter(Boolean);
+
+        const cleanGid = g.generation_id.replace(/^BMW_/i, '').replace(/_/g, ' ');
+        const searchableStrings = [
+          g.model_name,
+          g.generation_id,
+          cleanGid,
+          g.vehicle_type,
+          g.era,
+          g.status,
+          String(g.production_start),
+          g.production_end ? String(g.production_end) : 'active current present',
+          ...g.variants.flatMap(v => [
+            v.variant_id,
+            v.variant_id.replace(/_/g, ' '),
+            v.generation,
+            v.series,
+            v.engine,
+            v.engine_type,
+            v.fuel_type,
+            v.transmission,
+            v.drivetrain,
+            `${v.horsepower_hp} hp`,
+            `${v.horsepower_hp}hp`,
+            v.acceleration_0_100_s ? `${v.acceleration_0_100_s}s` : ''
+          ])
+        ];
+
+        const combinedText = searchableStrings.join(' ').toLowerCase();
+        const normalizedAlphanumeric = combinedText.replace(/[^a-z0-9]/g, ' ');
+
+        const allTokensMatch = tokens.every(token => {
+          if (combinedText.includes(token)) return true;
+          const cleanToken = token.replace(/[^a-z0-9]/g, '');
+          if (cleanToken && normalizedAlphanumeric.includes(cleanToken)) return true;
+          return false;
+        });
+
+        if (!allTokensMatch) return false;
       }
 
       // 2. Era filter
@@ -138,7 +174,44 @@ export const ModelGrid: React.FC<ModelGridProps> = ({
         setFilters={setFilters}
         totalMatches={filteredGenerations.length}
         totalAll={generations.length}
+        onReset={() => {
+          setSearchQuery('');
+          setFilters(prev => ({
+            ...prev,
+            searchQuery: ''
+          }));
+        }}
       />
+
+      {/* Active Search Results Banner */}
+      {effectiveQuery.trim() && (
+        <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl bg-[#b4befe]/10 border border-[#b4befe]/30 p-3 sm:px-4 text-xs text-[#cdd6f4] animate-fade-in">
+          <div className="flex items-center gap-2">
+            <span className="flex h-6 w-6 items-center justify-center rounded-lg bg-[#b4befe]/20 text-[#b4befe]">
+              <Search className="h-3.5 w-3.5" />
+            </span>
+            <span>
+              Search results for <span className="font-bold text-white font-mono bg-white/10 px-2 py-0.5 rounded">"{effectiveQuery}"</span>:
+              {filteredGenerations.length > 0 ? (
+                <span className="ml-1.5 text-[#a6e3a1] font-semibold">{filteredGenerations.length} {filteredGenerations.length === 1 ? 'model' : 'models'} found</span>
+              ) : (
+                <span className="ml-1.5 text-[#f38ba8] font-semibold">0 models found</span>
+              )}
+            </span>
+          </div>
+
+          <button
+            onClick={() => {
+              setSearchQuery('');
+              setFilters(prev => ({ ...prev, searchQuery: '' }));
+            }}
+            className="flex items-center gap-1 rounded-lg bg-[#181825] px-2.5 py-1 text-xs text-[#a6adc8] hover:text-white border border-[#313244] hover:border-white/20 transition-all"
+          >
+            <X className="h-3 w-3" />
+            Clear Search
+          </button>
+        </div>
+      )}
 
       {/* Models Grid */}
       {loading ? (
@@ -202,19 +275,25 @@ export const ModelGrid: React.FC<ModelGridProps> = ({
           <button
             onClick={() => {
               setSearchQuery('');
-              setFilters(prev => ({
-                ...prev,
+              setFilters({
                 searchQuery: '',
                 era: 'All',
                 series: 'All',
                 status: 'All',
                 fuelType: 'All',
-                drivetrain: 'All'
-              }));
+                drivetrain: 'All',
+                vehicleType: 'All',
+                minHorsepower: 0,
+                maxHorsepower: 1000,
+                minYear: 1929,
+                maxYear: 2026,
+                sortBy: 'year',
+                sortOrder: 'desc'
+              });
             }}
             className="mt-4 rounded-xl bg-[#b4befe] px-4 py-2 text-xs font-bold text-[#11111b] hover:bg-[#cba6f7] transition-all"
           >
-            Reset All Filters
+            Reset All Filters & Search
           </button>
         </div>
       )}

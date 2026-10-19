@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { 
   Car, 
   BarChart3, 
@@ -7,7 +7,8 @@ import {
   History, 
   Activity, 
   Layers,
-  Sparkles
+  Sparkles,
+  X
 } from 'lucide-react';
 
 interface HeaderProps {
@@ -29,6 +30,38 @@ export const Header: React.FC<HeaderProps> = ({
   activeCount,
   totalVariants
 }) => {
+  const searchInputRef = useRef<HTMLInputElement>(null);
+
+  // Divert to Model Explorer view when user clicks or focuses the search bar
+  const divertToExplorer = () => {
+    if (activeView !== 'explorer') {
+      setActiveView('explorer');
+    }
+  };
+
+  // Keyboard shortcut to focus search and divert to explorer: '/' or Ctrl/Cmd + K
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (
+        (e.key === '/' && document.activeElement?.tagName !== 'INPUT' && document.activeElement?.tagName !== 'TEXTAREA') ||
+        ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k')
+      ) {
+        e.preventDefault();
+        divertToExplorer();
+        searchInputRef.current?.focus();
+      } else if (e.key === 'Escape' && document.activeElement === searchInputRef.current) {
+        if (searchQuery) {
+          setSearchQuery('');
+        } else {
+          searchInputRef.current?.blur();
+        }
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [activeView, searchQuery]);
+
   return (
     <header className="sticky top-0 z-40 w-full border-b border-[#313244] bg-[#11111b]/90 backdrop-blur-md">
       {/* Top BMW M-Stripe Gradient Bar */}
@@ -56,28 +89,47 @@ export const Header: React.FC<HeaderProps> = ({
         </div>
 
         {/* Global Live Search Bar */}
-        <div className="relative flex-1 max-w-md">
-          <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[#a6adc8]" />
+        <div 
+          className="relative flex-1 max-w-md group cursor-text"
+          onClick={() => {
+            searchInputRef.current?.focus();
+            divertToExplorer();
+          }}
+        >
+          <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[#a6adc8] group-focus-within:text-[#b4befe] transition-colors" />
           <input
+            ref={searchInputRef}
             type="text"
             placeholder="Search chassis, engines, models (e.g. E46, B58, M3, 507, i4)..."
             value={searchQuery}
+            onFocus={divertToExplorer}
+            onClick={divertToExplorer}
             onChange={(e) => {
               setSearchQuery(e.target.value);
-              if (activeView === 'dashboard' && e.target.value.trim()) {
-                setActiveView('explorer');
-              }
+              divertToExplorer();
             }}
-            className="w-full rounded-xl glass-input py-2 pl-9 pr-4 text-xs placeholder:text-[#a6adc8]/60 focus:bg-[#181825]"
+            className="w-full rounded-xl glass-input py-2 pl-9 pr-14 text-xs placeholder:text-[#a6adc8]/60 focus:bg-[#181825] focus:border-[#b4befe]/50 transition-all"
           />
-          {searchQuery && (
-            <button
-              onClick={() => setSearchQuery('')}
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-xs text-[#a6adc8] hover:text-white"
-            >
-              Clear
-            </button>
-          )}
+          <div className="absolute right-2.5 top-1/2 -translate-y-1/2 flex items-center gap-1">
+            {searchQuery ? (
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setSearchQuery('');
+                  searchInputRef.current?.focus();
+                }}
+                className="rounded-md p-1 text-[#a6adc8] hover:text-white hover:bg-white/10 transition-colors"
+                title="Clear search"
+              >
+                <X className="h-3.5 w-3.5" />
+              </button>
+            ) : (
+              <kbd className="pointer-events-none hidden sm:inline-flex items-center rounded border border-[#313244] bg-[#181825] px-1.5 py-0.5 text-[10px] font-mono text-[#a6adc8]/70">
+                /
+              </kbd>
+            )}
+          </div>
         </div>
 
         {/* Quick KPI Badge Ribbon */}

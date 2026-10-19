@@ -7,13 +7,15 @@ interface FilterBarProps {
   setFilters: React.Dispatch<React.SetStateAction<FilterState>>;
   totalMatches: number;
   totalAll: number;
+  onReset?: () => void;
 }
 
 export const FilterBar: React.FC<FilterBarProps> = ({
   filters,
   setFilters,
   totalMatches,
-  totalAll
+  totalAll,
+  onReset
 }) => {
   const resetFilters = () => {
     setFilters({
@@ -31,6 +33,9 @@ export const FilterBar: React.FC<FilterBarProps> = ({
       sortBy: 'year',
       sortOrder: 'desc'
     });
+    if (onReset) {
+      onReset();
+    }
   };
 
   return (
