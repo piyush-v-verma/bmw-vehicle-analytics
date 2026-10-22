@@ -453,7 +453,7 @@ export const ModelDetailModal: React.FC<ModelDetailModalProps> = ({
               </div>
               <div className="h-48 w-full">
                 <ResponsiveContainer width="100%" height="100%">
-                  <AreaChart data={model.yearlySales}>
+                  <AreaChart data={model.yearlySales} margin={{ top: 10, right: 20, left: 10, bottom: 0 }}>
                     <defs>
                       <linearGradient id="genGradient" x1="0" y1="0" x2="0" y2="1">
                         <stop offset="5%" stopColor="#89b4fa" stopOpacity={0.4} />
@@ -461,20 +461,35 @@ export const ModelDetailModal: React.FC<ModelDetailModalProps> = ({
                       </linearGradient>
                     </defs>
                     <CartesianGrid strokeDasharray="3 3" stroke="#313244" vertical={false} />
-                    <XAxis dataKey="year" stroke="#a6adc8" fontSize={11} />
+                    <XAxis dataKey="year" stroke="#a6adc8" fontSize={11} tickLine={false} />
                     <YAxis 
+                      width={55}
                       stroke="#a6adc8" 
                       fontSize={11} 
                       tickFormatter={(v) => v >= 1_000_000 ? `${(v/1_000_000).toFixed(1)}M` : `${(v/1_000).toFixed(0)}k`} 
+                      tickLine={false}
+                      axisLine={false}
                     />
                     <Tooltip 
-                      formatter={(v: any, name: any, item: any) => [
-                        `${Number(v).toLocaleString()} units ${item.payload.isCompleteYear ? '(Audited Annual)' : `(${item.payload.coverageLabel})`}`,
-                        'Deliveries'
-                      ]}
+                      formatter={(v: any, name: any, item: any) => {
+                        const valNum = Number(v || 0);
+                        const inMillions = valNum >= 100_000 ? ` (${(valNum / 1_000_000).toFixed(2)}M)` : '';
+                        const isComp = item?.payload?.isCompleteYear;
+                        const cov = item?.payload?.coverageLabel || (isComp ? 'Audited Annual' : 'Partial');
+                        return [`${valNum.toLocaleString()} units${inMillions} • ${cov}`, 'Deliveries'];
+                      }}
+                      labelFormatter={(label) => `Year ${label}`}
                       contentStyle={{ backgroundColor: '#181825', borderColor: '#313244', borderRadius: '10px' }}
                     />
-                    <Area type="monotone" dataKey="units" stroke="#89b4fa" strokeWidth={2} fill="url(#genGradient)" />
+                    <Area 
+                      type="monotone" 
+                      dataKey="units" 
+                      stroke="#89b4fa" 
+                      strokeWidth={2} 
+                      fill="url(#genGradient)" 
+                      dot={{ r: 4, fill: '#89b4fa', stroke: '#11111b', strokeWidth: 1.5 }}
+                      activeDot={{ r: 6, fill: '#b4befe', stroke: '#11111b', strokeWidth: 2 }}
+                    />
                   </AreaChart>
                 </ResponsiveContainer>
               </div>

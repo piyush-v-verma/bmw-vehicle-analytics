@@ -10,6 +10,8 @@ import {
   CartesianGrid,
   LineChart,
   Line,
+  AreaChart,
+  Area,
   Cell
 } from 'recharts';
 import { TrendingUp, BarChart3, Calendar, ArrowUpRight, Info, ShieldCheck, Filter } from 'lucide-react';
@@ -29,9 +31,10 @@ export const SalesAnalyticsView: React.FC<SalesAnalyticsViewProps> = ({
   onSelectModel,
   loading
 }) => {
-  const [includePartialYtd, setIncludePartialYtd] = useState<boolean>(true);
+  const [includePartialYtd, setIncludePartialYtd] = useState<boolean>(false);
+  const [timelineType, setTimelineType] = useState<'area' | 'line'>('area');
 
-  // Dynamic calculations from validated data (no hardcoded claims)
+  // Dynamic calculations from validated data
   const {
     topGenerations,
     annualTrend,
@@ -49,7 +52,7 @@ export const SalesAnalyticsView: React.FC<SalesAnalyticsViewProps> = ({
       };
     }
 
-    // Determine ranking based on selected methodology (all vs complete annual only)
+    // Determine ranking based on selected methodology
     const sorted = [...generations].sort((a, b) => {
       const volA = includePartialYtd ? a.totalSales : a.annualSalesOnly;
       const volB = includePartialYtd ? b.totalSales : b.annualSalesOnly;
@@ -58,8 +61,10 @@ export const SalesAnalyticsView: React.FC<SalesAnalyticsViewProps> = ({
 
     const top10 = sorted.slice(0, 10).map((g) => {
       const vol = includePartialYtd ? g.totalSales : g.annualSalesOnly;
+      const chassisCode = g.generation_id.replace(/^BMW_/i, '').replace(/_/g, ' ');
       return {
-        id: g.generation_id.replace('BMW_', '').replace(/_/g, ' '),
+        id: `${g.model_name} (${chassisCode})`,
+        shortId: chassisCode,
         rawId: g.generation_id,
         fullModel: g,
         sales: vol,
@@ -70,7 +75,6 @@ export const SalesAnalyticsView: React.FC<SalesAnalyticsViewProps> = ({
     });
 
     // Aggregate global annual progression from generation yearlySales
-    // (which respects the strict authoritative annual vs monthly aggregation rule)
     const yearVolumeMap = new Map<number, { units: number; isComplete: boolean; coverage: string }>();
 
     for (const g of generations) {
@@ -157,16 +161,6 @@ export const SalesAnalyticsView: React.FC<SalesAnalyticsViewProps> = ({
             <Filter className="h-3 w-3" /> Data Scope:
           </span>
           <button
-            onClick={() => setIncludePartialYtd(true)}
-            className={`rounded-lg px-2.5 py-1 text-xs font-medium transition-all ${
-              includePartialYtd
-                ? 'bg-[#b4befe] text-[#11111b] font-bold shadow-sm'
-                : 'bg-[#181825] text-[#a6adc8] hover:text-white border border-[#313244]'
-            }`}
-          >
-            All Deliveries (Incl. 2024 YTD)
-          </button>
-          <button
             onClick={() => setIncludePartialYtd(false)}
             className={`rounded-lg px-2.5 py-1 text-xs font-medium transition-all ${
               !includePartialYtd
@@ -175,6 +169,16 @@ export const SalesAnalyticsView: React.FC<SalesAnalyticsViewProps> = ({
             }`}
           >
             Completed Annual Only (1929–2023)
+          </button>
+          <button
+            onClick={() => setIncludePartialYtd(true)}
+            className={`rounded-lg px-2.5 py-1 text-xs font-medium transition-all ${
+              includePartialYtd
+                ? 'bg-[#f9e2af] text-[#11111b] font-bold shadow-sm'
+                : 'bg-[#181825] text-[#a6adc8] hover:text-white border border-[#313244]'
+            }`}
+          >
+            All Deliveries (Incl. 2024 YTD)
           </button>
         </div>
       </div>
@@ -242,16 +246,27 @@ export const SalesAnalyticsView: React.FC<SalesAnalyticsViewProps> = ({
 
         <div className="h-80 w-full">
           <ResponsiveContainer width="100%" height="100%">
-            <BarChart data={topGenerations} layout="vertical" margin={{ left: 40, right: 30, top: 10, bottom: 10 }}>
+            <BarChart data={topGenerations} layout="vertical" margin={{ left: 10, right: 35, top: 10, bottom: 10 }}>
               <CartesianGrid strokeDasharray="3 3" stroke="#313244" horizontal={false} />
               <XAxis type="number" stroke="#a6adc8" fontSize={11} tickFormatter={(v) => `${v}M`} />
-              <YAxis type="category" dataKey="id" stroke="#cdd6f4" fontSize={11} width={100} tickLine={false} />
+              <YAxis 
+                type="category" 
+                dataKey="id" 
+                stroke="#cdd6f4" 
+                fontSize={11} 
+                width={135} 
+                tickLine={false} 
+              />
               <Tooltip
-                formatter={(val: any, name: any, item: any) => [
-                  `${item.payload.sales.toLocaleString()} units (${item.payload.salesM} Million)`,
-                  'Cumulative Volume'
-                ]}
-                labelFormatter={(label) => `BMW ${label}`}
+                formatter={(val: any, name: any, item: any) => {
+                  const actualUnits = item?.payload?.sales || 0;
+                  const inM = item?.payload?.salesM || (actualUnits / 1_000_000).toFixed(2);
+                  return [`${actualUnits.toLocaleString()} units (${inM} Million)`, 'Cumulative Deliveries'];
+                }}
+                labelFormatter={(label, payload) => {
+                  const full = payload?.[0]?.payload?.fullModel;
+                  return full ? `${full.model_name} (${full.generation_id.replace('BMW_', '')})` : label;
+                }}
                 contentStyle={{ backgroundColor: '#181825', borderColor: '#313244', borderRadius: '10px' }}
               />
               <Bar dataKey="salesM" fill="#0066b1" radius={[0, 6, 6, 0]}>
@@ -269,7 +284,7 @@ export const SalesAnalyticsView: React.FC<SalesAnalyticsViewProps> = ({
 
       {/* Grid: Global Annual Progression & Ranked Series Table */}
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-        {/* Annual Timeline Line Chart */}
+        {/* Annual Timeline Line/Area Chart */}
         <div className="glass-card rounded-2xl p-5 border border-[#313244]">
           <div className="flex items-center justify-between border-b border-[#313244] pb-3 mb-4">
             <div>
@@ -278,23 +293,76 @@ export const SalesAnalyticsView: React.FC<SalesAnalyticsViewProps> = ({
               </h4>
               <p className="text-[11px] text-[#a6adc8]">Aggregated by verified calendar year</p>
             </div>
-            <span className="text-xs text-[#b4befe] font-mono">Deliveries Trend</span>
+            <div className="flex items-center rounded-lg bg-[#181825] p-0.5 border border-[#313244] text-[11px]">
+              <button
+                onClick={() => setTimelineType('area')}
+                className={`rounded-md px-2 py-0.5 transition-all ${
+                  timelineType === 'area'
+                    ? 'bg-[#94e2d5] font-bold text-[#11111b]'
+                    : 'text-[#a6adc8] hover:text-white'
+                }`}
+              >
+                Area
+              </button>
+              <button
+                onClick={() => setTimelineType('line')}
+                className={`rounded-md px-2 py-0.5 transition-all ${
+                  timelineType === 'line'
+                    ? 'bg-[#94e2d5] font-bold text-[#11111b]'
+                    : 'text-[#a6adc8] hover:text-white'
+                }`}
+              >
+                Line
+              </button>
+            </div>
           </div>
           <div className="h-64 w-full">
             <ResponsiveContainer width="100%" height="100%">
-              <LineChart data={annualTrend}>
-                <CartesianGrid strokeDasharray="3 3" stroke="#313244" vertical={false} />
-                <XAxis dataKey="year" stroke="#a6adc8" fontSize={10} />
-                <YAxis stroke="#a6adc8" fontSize={10} tickFormatter={(v) => `${(v/1_000_000).toFixed(1)}M`} />
-                <Tooltip 
-                  formatter={(v: any, name: any, item: any) => [
-                    `${Number(v).toLocaleString()} units ${item.payload.isComplete ? '(Full Year)' : '(Partial YTD)'}`,
-                    'Deliveries'
-                  ]}
-                  contentStyle={{ backgroundColor: '#181825', borderColor: '#313244', borderRadius: '10px' }}
-                />
-                <Line type="monotone" dataKey="units" stroke="#94e2d5" strokeWidth={2.5} dot={false} />
-              </LineChart>
+              {timelineType === 'area' ? (
+                <AreaChart data={annualTrend} margin={{ top: 10, right: 20, left: 10, bottom: 0 }}>
+                  <defs>
+                    <linearGradient id="salesViewGrad" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="5%" stopColor="#94e2d5" stopOpacity={0.4} />
+                      <stop offset="95%" stopColor="#94e2d5" stopOpacity={0.0} />
+                    </linearGradient>
+                  </defs>
+                  <CartesianGrid strokeDasharray="3 3" stroke="#313244" vertical={false} />
+                  <XAxis dataKey="year" stroke="#a6adc8" fontSize={10} tickLine={false} />
+                  <YAxis width={55} stroke="#a6adc8" fontSize={10} tickFormatter={(v) => `${(v/1_000_000).toFixed(1)}M`} tickLine={false} axisLine={false} />
+                  <Tooltip 
+                    formatter={(v: any, name: any, item: any) => {
+                      const actual = item?.payload?.units || Number(v || 0);
+                      const isComp = item?.payload?.isComplete;
+                      return [
+                        `${actual.toLocaleString()} units ${isComp ? '(Audited Full Year)' : '(Partial YTD)'}`,
+                        'Deliveries'
+                      ];
+                    }}
+                    labelFormatter={(label) => `Year ${label}`}
+                    contentStyle={{ backgroundColor: '#181825', borderColor: '#313244', borderRadius: '10px' }}
+                  />
+                  <Area type="monotone" dataKey="units" stroke="#94e2d5" strokeWidth={2.5} fill="url(#salesViewGrad)" activeDot={{ r: 6, fill: '#94e2d5', stroke: '#11111b', strokeWidth: 2 }} />
+                </AreaChart>
+              ) : (
+                <LineChart data={annualTrend} margin={{ top: 10, right: 20, left: 10, bottom: 0 }}>
+                  <CartesianGrid strokeDasharray="3 3" stroke="#313244" vertical={false} />
+                  <XAxis dataKey="year" stroke="#a6adc8" fontSize={10} tickLine={false} />
+                  <YAxis width={55} stroke="#a6adc8" fontSize={10} tickFormatter={(v) => `${(v/1_000_000).toFixed(1)}M`} tickLine={false} axisLine={false} />
+                  <Tooltip 
+                    formatter={(v: any, name: any, item: any) => {
+                      const actual = item?.payload?.units || Number(v || 0);
+                      const isComp = item?.payload?.isComplete;
+                      return [
+                        `${actual.toLocaleString()} units ${isComp ? '(Audited Full Year)' : '(Partial YTD)'}`,
+                        'Deliveries'
+                      ];
+                    }}
+                    labelFormatter={(label) => `Year ${label}`}
+                    contentStyle={{ backgroundColor: '#181825', borderColor: '#313244', borderRadius: '10px' }}
+                  />
+                  <Line type="monotone" dataKey="units" stroke="#94e2d5" strokeWidth={2.5} dot={false} activeDot={{ r: 6, fill: '#94e2d5', stroke: '#11111b', strokeWidth: 2 }} />
+                </LineChart>
+              )}
             </ResponsiveContainer>
           </div>
         </div>
@@ -329,7 +397,7 @@ export const SalesAnalyticsView: React.FC<SalesAnalyticsViewProps> = ({
                           </span>
                         )}
                       </div>
-                      <div className="text-[10px] text-[#a6adc8] font-mono">{g.id} ({g.years})</div>
+                      <div className="text-[10px] text-[#a6adc8] font-mono">{g.shortId} ({g.years})</div>
                     </div>
                   </div>
 

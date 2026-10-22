@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import {
   ResponsiveContainer,
   BarChart,
@@ -21,50 +21,52 @@ interface SeriesBarChartProps {
 export const SeriesBarChart: React.FC<SeriesBarChartProps> = ({ generations, loading }) => {
   const [metric, setMetric] = useState<'sales' | 'power' | 'variants'>('sales');
 
+  // Categorize generations into standard series groups
+  const chartData = useMemo(() => {
+    const seriesGroups: Record<string, { totalSales: number; totalPower: number; count: number; variantCount: number }> = {};
+
+    for (const g of generations) {
+      let group = 'Historical / Classic';
+      const s = String(g.model_name || '').toLowerCase();
+      const gid = String(g.generation_id || '').toLowerCase();
+
+      if (s.includes('3 series') || gid.includes('bmw_3_')) group = '3 Series';
+      else if (s.includes('5 series') || gid.includes('bmw_5_')) group = '5 Series';
+      else if (s.includes('7 series') || gid.includes('bmw_7_')) group = '7 Series';
+      else if (s.includes('x1') || s.includes('x2') || s.includes('x3') || s.includes('x4') || s.includes('x5') || s.includes('x6') || s.includes('x7') || s.includes('xm') || gid.includes('bmw_x')) group = 'X Family (SAV/SAC)';
+      else if (s.includes('1 series') || gid.includes('bmw_1_')) group = '1 Series';
+      else if (s.includes('2 series') || gid.includes('bmw_2_')) group = '2 Series';
+      else if (s.includes('4 series') || gid.includes('bmw_4_')) group = '4 Series';
+      else if (s.includes('6 series') || s.includes('8 series') || gid.includes('bmw_6_') || gid.includes('bmw_8_')) group = '6 & 8 Series';
+      else if (s.includes('z1') || s.includes('z3') || s.includes('z4') || s.includes('z8') || gid.includes('bmw_z')) group = 'Z Roadsters';
+      else if (s.startsWith('i') || gid.includes('bmw_i')) group = 'i-Series (EV/PHEV)';
+
+      if (!seriesGroups[group]) {
+        seriesGroups[group] = { totalSales: 0, totalPower: 0, count: 0, variantCount: 0 };
+      }
+      seriesGroups[group].totalSales += g.totalSales;
+      seriesGroups[group].totalPower += g.primaryVariant.horsepower_hp;
+      seriesGroups[group].count += 1;
+      seriesGroups[group].variantCount += g.variants.length;
+    }
+
+    return Object.entries(seriesGroups).map(([name, data]) => ({
+      name,
+      sales: data.totalSales,
+      salesMillions: Number((data.totalSales / 1_000_000).toFixed(2)),
+      avgPower: Math.round(data.totalPower / (data.count || 1)),
+      variants: data.variantCount,
+      generations: data.count
+    })).sort((a, b) => {
+      if (metric === 'sales') return b.sales - a.sales;
+      if (metric === 'power') return b.avgPower - a.avgPower;
+      return b.variants - a.variants;
+    });
+  }, [generations, metric]);
+
   if (loading) {
     return <ChartSkeleton heightClass="h-[380px]" />;
   }
-
-  // Categorize generations into standard series groups
-  const seriesGroups: Record<string, { totalSales: number; totalPower: number; count: number; variantCount: number }> = {};
-
-  for (const g of generations) {
-    let group = 'Historical / Classic';
-    const s = g.model_name.toLowerCase();
-    const gid = g.generation_id.toLowerCase();
-
-    if (s.includes('3 series') || gid.includes('bmw_3_')) group = '3 Series';
-    else if (s.includes('5 series') || gid.includes('bmw_5_')) group = '5 Series';
-    else if (s.includes('7 series') || gid.includes('bmw_7_')) group = '7 Series';
-    else if (s.includes('x1') || s.includes('x2') || s.includes('x3') || s.includes('x4') || s.includes('x5') || s.includes('x6') || s.includes('x7') || s.includes('xm') || gid.includes('bmw_x')) group = 'X Family (SAV/SAC)';
-    else if (s.includes('1 series') || gid.includes('bmw_1_')) group = '1 Series';
-    else if (s.includes('2 series') || gid.includes('bmw_2_')) group = '2 Series';
-    else if (s.includes('4 series') || gid.includes('bmw_4_')) group = '4 Series';
-    else if (s.includes('6 series') || s.includes('8 series') || gid.includes('bmw_6_') || gid.includes('bmw_8_')) group = '6 & 8 Series';
-    else if (s.includes('z1') || s.includes('z3') || s.includes('z4') || s.includes('z8') || gid.includes('bmw_z')) group = 'Z Roadsters';
-    else if (s.startsWith('i') || gid.includes('bmw_i')) group = 'i-Series (EV/PHEV)';
-
-    if (!seriesGroups[group]) {
-      seriesGroups[group] = { totalSales: 0, totalPower: 0, count: 0, variantCount: 0 };
-    }
-    seriesGroups[group].totalSales += g.totalSales;
-    seriesGroups[group].totalPower += g.primaryVariant.horsepower_hp;
-    seriesGroups[group].count += 1;
-    seriesGroups[group].variantCount += g.variants.length;
-  }
-
-  const chartData = Object.entries(seriesGroups).map(([name, data]) => ({
-    name,
-    sales: data.totalSales,
-    salesMillions: Number((data.totalSales / 1_000_000).toFixed(2)),
-    avgPower: Math.round(data.totalPower / (data.count || 1)),
-    variants: data.variantCount,
-    generations: data.count
-  })).sort((a, b) => {
-    if (metric === 'sales') return b.sales - a.sales;
-    if (metric === 'power') return b.avgPower - a.avgPower;
-    return b.variants - a.variants;
-  });
 
   const BAR_COLORS = [
     '#0066b1', // BMW M Blue
@@ -76,7 +78,8 @@ export const SeriesBarChart: React.FC<SeriesBarChartProps> = ({ generations, loa
     '#89b4fa', // Blue
     '#cba6f7', // Purple
     '#f38ba8', // Pink
-    '#fab387'  // Peach
+    '#fab387', // Peach
+    '#74c7ec'  // Sapphire
   ];
 
   return (
@@ -132,12 +135,12 @@ export const SeriesBarChart: React.FC<SeriesBarChartProps> = ({ generations, loa
       </div>
 
       {/* Chart Canvas */}
-      <div className="mt-4 h-72 w-full">
+      <div className="mt-4 h-[320px] w-full">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart
             data={chartData}
             layout="vertical"
-            margin={{ top: 5, right: 20, left: 35, bottom: 5 }}
+            margin={{ top: 5, right: 30, left: 10, bottom: 5 }}
           >
             <CartesianGrid strokeDasharray="3 3" stroke="#313244" horizontal={false} />
             <XAxis 
@@ -156,12 +159,17 @@ export const SeriesBarChart: React.FC<SeriesBarChartProps> = ({ generations, loa
               stroke="#cdd6f4" 
               fontSize={11}
               tickLine={false}
-              width={110}
+              width={140}
             />
             <Tooltip
               formatter={(value: any, name: any, item: any) => {
-                if (metric === 'sales') return [`${Number(value).toFixed(2)}M units (${item.payload.sales.toLocaleString()})`, 'Total Volume'];
-                if (metric === 'power') return [`${value} hp average`, 'Peak Power Average'];
+                if (metric === 'sales') {
+                  const actualUnits = item?.payload?.sales || 0;
+                  return [`${actualUnits.toLocaleString()} units (${Number(value || 0).toFixed(2)}M)`, 'Total Volume'];
+                }
+                if (metric === 'power') {
+                  return [`${value} hp average across line`, 'Peak Power Average'];
+                }
                 return [`${value} documented engines/trims`, 'Powertrain Variants'];
               }}
               contentStyle={{ backgroundColor: '#181825', borderColor: '#313244', borderRadius: '10px' }}
@@ -176,6 +184,11 @@ export const SeriesBarChart: React.FC<SeriesBarChartProps> = ({ generations, loa
             </Bar>
           </BarChart>
         </ResponsiveContainer>
+      </div>
+
+      <div className="mt-3 flex items-center justify-between text-[11px] text-[#a6adc8] border-t border-[#313244]/50 pt-2.5">
+        <span>Click tabs above to compare delivery volume, horsepower, and powertrain diversity.</span>
+        <span className="font-semibold text-[#b4befe]">11 Series Groups</span>
       </div>
     </div>
   );

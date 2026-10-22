@@ -148,32 +148,12 @@ export function App() {
     }
   }, [salesLoaded, salesLoading]);
 
-  // Trigger load depending on activeView or pending deep links
+  // Load datasets upfront so all views, charts, and models have immediate, complete data
   useEffect(() => {
-    if (pendingModelId || pendingCompareIds.length > 0) {
-      ensureHistoryLoaded();
-      ensureSpecsLoaded();
-      ensureSalesLoaded();
-      return;
-    }
-
-    if (activeView === 'dashboard') {
-      ensureHistoryLoaded();
-      ensureSpecsLoaded();
-      ensureSalesLoaded();
-    } else if (activeView === 'explorer') {
-      ensureHistoryLoaded();
-      ensureSpecsLoaded();
-    } else if (activeView === 'sales') {
-      ensureHistoryLoaded();
-      ensureSalesLoaded();
-    } else if (activeView === 'evolution') {
-      ensureHistoryLoaded();
-    } else if (activeView === 'comparison') {
-      ensureHistoryLoaded();
-      ensureSpecsLoaded();
-    }
-  }, [activeView, pendingModelId, pendingCompareIds, ensureHistoryLoaded, ensureSpecsLoaded, ensureSalesLoaded]);
+    ensureHistoryLoaded();
+    ensureSpecsLoaded();
+    ensureSalesLoaded();
+  }, [ensureHistoryLoaded, ensureSpecsLoaded, ensureSalesLoaded]);
 
   // Handle selected model specs/sales lazy loading when details modal is opened
   useEffect(() => {
