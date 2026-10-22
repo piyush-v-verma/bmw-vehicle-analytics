@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { EnrichedGeneration, BmwSpecs } from '../../types/bmw';
+import { EnrichedGeneration } from '../../types/bmw';
 import {
   ResponsiveContainer,
   RadarChart,
@@ -7,10 +7,9 @@ import {
   PolarAngleAxis,
   PolarRadiusAxis,
   Radar,
-  Legend,
   Tooltip
 } from 'recharts';
-import { GitCompare, X, Plus, Trophy, Flame, Gauge, Zap, Weight, Fuel, ExternalLink } from 'lucide-react';
+import { GitCompare, X, Plus, Trophy, ExternalLink, Share2, Check, ShieldCheck } from 'lucide-react';
 import { Skeleton } from '../common/Skeleton';
 import { ChartSkeleton } from '../common/ChartSkeleton';
 import { TableSkeleton } from '../common/TableSkeleton';
@@ -33,6 +32,25 @@ export const ModelComparisonView: React.FC<ModelComparisonViewProps> = ({
   loading
 }) => {
   const [selectedToAddGid, setSelectedToAddGid] = useState<string>('');
+  const [copiedLink, setCopiedLink] = useState<boolean>(false);
+
+  const handleShareComparison = () => {
+    try {
+      const ids = activeCompared.map(c => c.generation_id).join(',');
+      const url = `${window.location.origin}${window.location.pathname}?view=comparison&compare=${encodeURIComponent(ids)}`;
+      navigator.clipboard.writeText(url);
+      setCopiedLink(true);
+      setTimeout(() => setCopiedLink(false), 2500);
+    } catch (e) {
+      console.warn('Clipboard write failed:', e);
+    }
+  };
+
+  const renderUnavailable = (text = 'Spec unavailable') => (
+    <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-sans italic text-[#a6adc8]/60 bg-white/5 border border-white/5">
+      {text}
+    </span>
+  );
 
   if (loading) {
     return (
@@ -103,7 +121,6 @@ export const ModelComparisonView: React.FC<ModelComparisonViewProps> = ({
       ...Object.fromEntries(
         activeCompared.map((c, i) => {
           const acc = c.primaryVariant.acceleration_0_100_s || 12;
-          // Invert: 3.0s -> 100, 15.0s -> 10
           const score = Math.max(10, Math.round((1 - (acc - 2.5) / 12) * 100));
           return [`car_${i}`, score];
         })
@@ -114,7 +131,6 @@ export const ModelComparisonView: React.FC<ModelComparisonViewProps> = ({
       ...Object.fromEntries(
         activeCompared.map((c, i) => {
           const w = c.primaryVariant.weight_kg || 1800;
-          // Lighter is better
           const score = Math.max(10, Math.round((1 - (w - 700) / 1800) * 100));
           return [`car_${i}`, score];
         })
@@ -125,10 +141,10 @@ export const ModelComparisonView: React.FC<ModelComparisonViewProps> = ({
   const RADAR_COLORS = ['#b4befe', '#94e2d5', '#f38ba8', '#f9e2af'];
 
   // Best values for highlights
-  const highestHp = Math.max(...activeCompared.map(c => c.primaryVariant.horsepower_hp));
+  const highestHp = Math.max(...activeCompared.map(c => c.primaryVariant.horsepower_hp || 0));
   const fastestAcc = Math.min(...activeCompared.map(c => c.primaryVariant.acceleration_0_100_s || 99));
   const lightestWeight = Math.min(...activeCompared.map(c => c.primaryVariant.weight_kg || 9999));
-  const highestSales = Math.max(...activeCompared.map(c => c.totalSales));
+  const highestSales = Math.max(...activeCompared.map(c => c.totalSales || 0));
 
   return (
     <div className="space-y-6">
@@ -147,14 +163,35 @@ export const ModelComparisonView: React.FC<ModelComparisonViewProps> = ({
             </p>
           </div>
 
-          {/* Add Car Dropdown */}
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2">
+            {/* Share Comparison Deep Link */}
+            {activeCompared.length > 0 && (
+              <button
+                onClick={handleShareComparison}
+                className="flex items-center gap-1.5 rounded-xl bg-[#181825] px-3 py-2 text-xs font-semibold text-white hover:bg-white/10 border border-[#313244] transition-all"
+                title="Share this specific model comparison URL"
+              >
+                {copiedLink ? (
+                  <>
+                    <Check className="h-3.5 w-3.5 text-[#a6e3a1]" />
+                    <span className="text-[#a6e3a1]">Link Copied!</span>
+                  </>
+                ) : (
+                  <>
+                    <Share2 className="h-3.5 w-3.5 text-[#b4befe]" />
+                    <span>Share Compare</span>
+                  </>
+                )}
+              </button>
+            )}
+
+            {/* Add Car Dropdown */}
             <select
               value={selectedToAddGid}
               onChange={(e) => setSelectedToAddGid(e.target.value)}
-              className="rounded-xl glass-input py-2 px-3 text-xs text-white"
+              className="rounded-xl glass-input py-2 px-3 text-xs text-white max-w-[220px]"
             >
-              <option value="">+ Select a BMW Model to Add...</option>
+              <option value="">+ Add a BMW Model...</option>
               {generations
                 .filter(g => !activeCompared.some(c => c.generation_id === g.generation_id))
                 .map(g => (
@@ -188,7 +225,7 @@ export const ModelComparisonView: React.FC<ModelComparisonViewProps> = ({
           {activeCompared.length === 0 ? (
             <div className="col-span-full py-12 text-center text-xs text-[#a6adc8] border border-dashed border-[#313244] rounded-2xl bg-[#11111b]/30">
               <GitCompare className="h-8 w-8 text-[#a6adc8]/40 mx-auto mb-2.5" />
-              No models selected for comparison. Use the dropdown above or click "+ Compare" on a model card to add models.
+              No models selected for comparison. Use the dropdown above or click "+ Compare" on any model card to start comparing.
             </div>
           ) : (
             activeCompared.map((car, idx) => (
@@ -223,7 +260,7 @@ export const ModelComparisonView: React.FC<ModelComparisonViewProps> = ({
 
                 <div className="mt-3 border-t border-[#313244] pt-2 flex items-center justify-between">
                   <span className="text-xs font-mono font-bold" style={{ color: RADAR_COLORS[idx % RADAR_COLORS.length] }}>
-                    {car.primaryVariant.horsepower_hp} hp
+                    {car.primaryVariant.horsepower_hp && car.primaryVariant.horsepower_hp > 0 ? `${car.primaryVariant.horsepower_hp} hp` : 'Spec unavail.'}
                   </span>
                   <button
                     onClick={() => onSelectModel(car)}
@@ -258,51 +295,81 @@ export const ModelComparisonView: React.FC<ModelComparisonViewProps> = ({
                   <Tooltip
                     contentStyle={{ backgroundColor: '#181825', borderColor: '#313244', borderRadius: '10px' }}
                   />
-                  {activeCompared.map((car, idx) => (
+                  {activeCompared.map((c, idx) => (
                     <Radar
-                      key={car.generation_id}
-                      name={car.model_name}
+                      key={c.generation_id}
+                      name={c.model_name}
                       dataKey={`car_${idx}`}
                       stroke={RADAR_COLORS[idx % RADAR_COLORS.length]}
                       fill={RADAR_COLORS[idx % RADAR_COLORS.length]}
                       fillOpacity={0.25}
                     />
                   ))}
-                  <Legend />
                 </RadarChart>
               </ResponsiveContainer>
             </div>
           </div>
 
-          {/* Side-by-Side Spec Comparison Table */}
+          {/* Granular Specification Comparison Matrix */}
           <div className="glass-card rounded-2xl p-5 border border-[#313244] overflow-x-auto">
             <div className="flex items-center justify-between border-b border-[#313244] pb-3 mb-4">
               <h4 className="text-sm font-bold text-white font-['Outfit']">
-                Comprehensive Technical Differentials
+                Comprehensive Engineering & Performance Matrix
               </h4>
-              <span className="text-xs text-[#a6adc8]">Color-coded pinnacle values</span>
+              <span className="text-xs text-[#a6adc8]">Highest-spec values highlighted</span>
             </div>
 
-            <table className="w-full text-left text-xs border-collapse">
+            <table className="w-full text-left text-xs font-mono border-collapse">
               <thead>
                 <tr className="border-b border-[#313244] text-[#a6adc8]">
-                  <th className="py-2.5 px-3 font-semibold">Technical Attribute</th>
-                  {activeCompared.map((c, i) => (
-                    <th key={c.generation_id} className="py-2.5 px-3 font-bold text-white font-mono">
-                      {c.generation_id.replace('BMW_', '')}
+                  <th className="py-2 px-3 font-semibold text-white">Metric</th>
+                  {activeCompared.map((c, idx) => (
+                    <th key={c.generation_id} className="py-2 px-3 font-semibold" style={{ color: RADAR_COLORS[idx % RADAR_COLORS.length] }}>
+                      {c.model_name}
                     </th>
                   ))}
                 </tr>
               </thead>
-              <tbody className="divide-y divide-[#313244]/60 font-mono">
+              <tbody className="divide-y divide-[#313244]/40">
+                {/* Generation Code */}
+                <tr>
+                  <td className="py-2.5 px-3 text-[#a6adc8] font-sans font-medium">Chassis / ID</td>
+                  {activeCompared.map((c) => (
+                    <td key={c.generation_id} className="py-2.5 px-3 text-white">
+                      {c.generation_id.replace('BMW_', '')}
+                    </td>
+                  ))}
+                </tr>
+
+                {/* Production Years */}
+                <tr>
+                  <td className="py-2.5 px-3 text-[#a6adc8] font-sans font-medium">Production Period</td>
+                  {activeCompared.map((c) => (
+                    <td key={c.generation_id} className="py-2.5 px-3 text-white">
+                      {c.production_start}{c.production_end ? `–${c.production_end}` : '–Present'}
+                    </td>
+                  ))}
+                </tr>
+
+                {/* Primary Trim */}
+                <tr>
+                  <td className="py-2.5 px-3 text-[#a6adc8] font-sans font-medium">Representative Variant</td>
+                  {activeCompared.map((c) => (
+                    <td key={c.generation_id} className="py-2.5 px-3 text-white">
+                      {c.primaryVariant.variant_id.replace(/_/g, ' ')}
+                    </td>
+                  ))}
+                </tr>
+
                 {/* Horsepower */}
                 <tr>
                   <td className="py-2.5 px-3 text-[#a6adc8] font-sans font-medium">Horsepower</td>
                   {activeCompared.map((c) => {
-                    const isWinner = c.primaryVariant.horsepower_hp === highestHp;
+                    const hp = c.primaryVariant.horsepower_hp;
+                    const isWinner = hp > 0 && hp === highestHp;
                     return (
                       <td key={c.generation_id} className={`py-2.5 px-3 ${isWinner ? 'text-[#f38ba8] font-black' : 'text-white'}`}>
-                        {c.primaryVariant.horsepower_hp} hp {isWinner && '🏆'}
+                        {hp && hp > 0 ? `${hp} hp` : renderUnavailable()} {isWinner && '🏆'}
                       </td>
                     );
                   })}
@@ -313,10 +380,10 @@ export const ModelComparisonView: React.FC<ModelComparisonViewProps> = ({
                   <td className="py-2.5 px-3 text-[#a6adc8] font-sans font-medium">0–100 km/h</td>
                   {activeCompared.map((c) => {
                     const acc = c.primaryVariant.acceleration_0_100_s;
-                    const isWinner = acc === fastestAcc;
+                    const isWinner = acc && acc === fastestAcc;
                     return (
                       <td key={c.generation_id} className={`py-2.5 px-3 ${isWinner ? 'text-[#89b4fa] font-black' : 'text-white'}`}>
-                        {acc ? `${acc} s` : 'N/A'} {isWinner && '⚡'}
+                        {acc ? `${acc} s` : renderUnavailable()} {isWinner && '⚡'}
                       </td>
                     );
                   })}
@@ -325,31 +392,38 @@ export const ModelComparisonView: React.FC<ModelComparisonViewProps> = ({
                 {/* Top Speed */}
                 <tr>
                   <td className="py-2.5 px-3 text-[#a6adc8] font-sans font-medium">Top Speed</td>
-                  {activeCompared.map((c) => (
-                    <td key={c.generation_id} className="py-2.5 px-3 text-white">
-                      {c.primaryVariant.top_speed_kmh} km/h
-                    </td>
-                  ))}
+                  {activeCompared.map((c) => {
+                    const spd = c.primaryVariant.top_speed_kmh;
+                    return (
+                      <td key={c.generation_id} className="py-2.5 px-3 text-white">
+                        {spd && spd > 0 ? `${spd} km/h` : renderUnavailable()}
+                      </td>
+                    );
+                  })}
                 </tr>
 
                 {/* Torque */}
                 <tr>
                   <td className="py-2.5 px-3 text-[#a6adc8] font-sans font-medium">Peak Torque</td>
-                  {activeCompared.map((c) => (
-                    <td key={c.generation_id} className="py-2.5 px-3 text-white">
-                      {c.primaryVariant.torque_nm} Nm
-                    </td>
-                  ))}
+                  {activeCompared.map((c) => {
+                    const tq = c.primaryVariant.torque_nm;
+                    return (
+                      <td key={c.generation_id} className="py-2.5 px-3 text-white">
+                        {tq && tq > 0 ? `${tq} Nm` : renderUnavailable()}
+                      </td>
+                    );
+                  })}
                 </tr>
 
                 {/* Kerb Weight */}
                 <tr>
                   <td className="py-2.5 px-3 text-[#a6adc8] font-sans font-medium">Kerb Weight</td>
                   {activeCompared.map((c) => {
-                    const isWinner = c.primaryVariant.weight_kg === lightestWeight;
+                    const w = c.primaryVariant.weight_kg;
+                    const isWinner = w && w === lightestWeight;
                     return (
                       <td key={c.generation_id} className={`py-2.5 px-3 ${isWinner ? 'text-[#a6e3a1] font-black' : 'text-white'}`}>
-                        {c.primaryVariant.weight_kg} kg {isWinner && '🪶'}
+                        {w && w > 0 ? `${w} kg` : renderUnavailable()} {isWinner && '🪶'}
                       </td>
                     );
                   })}
@@ -360,7 +434,11 @@ export const ModelComparisonView: React.FC<ModelComparisonViewProps> = ({
                   <td className="py-2.5 px-3 text-[#a6adc8] font-sans font-medium">Engine & Layout</td>
                   {activeCompared.map((c) => (
                     <td key={c.generation_id} className="py-2.5 px-3 text-white">
-                      {c.primaryVariant.engine} ({c.primaryVariant.engine_type})
+                      {c.primaryVariant.engine && c.primaryVariant.engine !== 'N/A' ? (
+                        `${c.primaryVariant.engine} (${c.primaryVariant.engine_type})`
+                      ) : (
+                        renderUnavailable()
+                      )}
                     </td>
                   ))}
                 </tr>
@@ -382,7 +460,11 @@ export const ModelComparisonView: React.FC<ModelComparisonViewProps> = ({
                     const isWinner = c.totalSales === highestSales && c.totalSales > 0;
                     return (
                       <td key={c.generation_id} className={`py-2.5 px-3 ${isWinner ? 'text-[#f9e2af] font-black' : 'text-white'}`}>
-                        {c.totalSales >= 1_000_000 ? `${(c.totalSales / 1_000_000).toFixed(2)}M units` : c.totalSales.toLocaleString()} {isWinner && '👑'}
+                        {c.totalSales > 0 ? (
+                          c.totalSales >= 1_000_000 ? `${(c.totalSales / 1_000_000).toFixed(2)}M units` : `${c.totalSales.toLocaleString()} units`
+                        ) : (
+                          renderUnavailable('Annual only')
+                        )} {isWinner && '👑'}
                       </td>
                     );
                   })}

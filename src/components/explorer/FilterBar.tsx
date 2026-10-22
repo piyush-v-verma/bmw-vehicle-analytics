@@ -1,6 +1,6 @@
 import React from 'react';
 import { FilterState } from '../../types/bmw';
-import { Filter, RotateCcw, ArrowUpDown } from 'lucide-react';
+import { Filter, RotateCcw, ArrowUpDown, Gauge, Calendar, Zap } from 'lucide-react';
 
 interface FilterBarProps {
   filters: FilterState;
@@ -38,6 +38,66 @@ export const FilterBar: React.FC<FilterBarProps> = ({
     }
   };
 
+  // Helper for horsepower preset change
+  const handleHorsepowerPreset = (val: string) => {
+    if (val === 'all') {
+      setFilters(prev => ({ ...prev, minHorsepower: 0, maxHorsepower: 1000 }));
+    } else if (val === 'under150') {
+      setFilters(prev => ({ ...prev, minHorsepower: 0, maxHorsepower: 150 }));
+    } else if (val === '150-300') {
+      setFilters(prev => ({ ...prev, minHorsepower: 150, maxHorsepower: 300 }));
+    } else if (val === '300-500') {
+      setFilters(prev => ({ ...prev, minHorsepower: 300, maxHorsepower: 500 }));
+    } else if (val === 'over500') {
+      setFilters(prev => ({ ...prev, minHorsepower: 500, maxHorsepower: 1000 }));
+    }
+  };
+
+  // Helper for year range preset change
+  const handleYearPreset = (val: string) => {
+    if (val === 'all') {
+      setFilters(prev => ({ ...prev, minYear: 1929, maxYear: 2026 }));
+    } else if (val === '2020s') {
+      setFilters(prev => ({ ...prev, minYear: 2020, maxYear: 2026 }));
+    } else if (val === '2010s') {
+      setFilters(prev => ({ ...prev, minYear: 2010, maxYear: 2019 }));
+    } else if (val === '2000s') {
+      setFilters(prev => ({ ...prev, minYear: 2000, maxYear: 2009 }));
+    } else if (val === '1990s') {
+      setFilters(prev => ({ ...prev, minYear: 1990, maxYear: 1999 }));
+    } else if (val === 'classic') {
+      setFilters(prev => ({ ...prev, minYear: 1929, maxYear: 1989 }));
+    }
+  };
+
+  const currentHpPreset =
+    filters.minHorsepower === 0 && filters.maxHorsepower === 1000
+      ? 'all'
+      : filters.minHorsepower === 0 && filters.maxHorsepower === 150
+      ? 'under150'
+      : filters.minHorsepower === 150 && filters.maxHorsepower === 300
+      ? '150-300'
+      : filters.minHorsepower === 300 && filters.maxHorsepower === 500
+      ? '300-500'
+      : filters.minHorsepower === 500
+      ? 'over500'
+      : 'custom';
+
+  const currentYearPreset =
+    filters.minYear === 1929 && filters.maxYear === 2026
+      ? 'all'
+      : filters.minYear === 2020 && filters.maxYear === 2026
+      ? '2020s'
+      : filters.minYear === 2010 && filters.maxYear === 2019
+      ? '2010s'
+      : filters.minYear === 2000 && filters.maxYear === 2009
+      ? '2000s'
+      : filters.minYear === 1990 && filters.maxYear === 1999
+      ? '1990s'
+      : filters.minYear === 1929 && filters.maxYear === 1989
+      ? 'classic'
+      : 'custom';
+
   return (
     <div className="glass-card rounded-2xl p-4 sm:p-5">
       <div className="flex flex-col gap-4">
@@ -51,7 +111,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({
             </span>
           </div>
 
-          <div className="flex items-center gap-2.5">
+          <div className="flex flex-wrap items-center gap-2.5">
             {/* Sort Selector */}
             <div className="flex items-center gap-1.5 text-xs text-[#a6adc8]">
               <ArrowUpDown className="h-3.5 w-3.5" />
@@ -59,7 +119,9 @@ export const FilterBar: React.FC<FilterBarProps> = ({
               <select
                 value={`${filters.sortBy}-${filters.sortOrder}`}
                 onChange={(e) => {
-                  const [by, order] = e.target.value.split('-') as [FilterState['sortBy'], FilterState['sortOrder']];
+                  const parts = e.target.value.split('-');
+                  const order = parts.pop() as FilterState['sortOrder'];
+                  const by = parts.join('-') as FilterState['sortBy'];
                   setFilters(prev => ({ ...prev, sortBy: by, sortOrder: order }));
                 }}
                 className="rounded-lg glass-input py-1 px-2 text-xs text-white"
@@ -68,6 +130,9 @@ export const FilterBar: React.FC<FilterBarProps> = ({
                 <option value="year-asc">Oldest Year First</option>
                 <option value="power-desc">Highest Horsepower</option>
                 <option value="power-asc">Lowest Horsepower</option>
+                <option value="acceleration-asc">Fastest 0–100 km/h</option>
+                <option value="weight_asc-asc">Lightest Kerb Weight</option>
+                <option value="weight_desc-desc">Heaviest Kerb Weight</option>
                 <option value="speed-desc">Highest Top Speed</option>
                 <option value="sales-desc">Highest Sales Volume</option>
                 <option value="name-asc">Model Name (A-Z)</option>
@@ -79,13 +144,13 @@ export const FilterBar: React.FC<FilterBarProps> = ({
               className="flex items-center gap-1.5 rounded-lg bg-[#181825] px-2.5 py-1 text-xs text-[#a6adc8] hover:text-white border border-[#313244] hover:border-white/20 transition-all"
             >
               <RotateCcw className="h-3 w-3" />
-              Reset
+              Reset Filters
             </button>
           </div>
         </div>
 
-        {/* Filter Dropdowns Grid */}
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5 text-xs">
+        {/* Filter Dropdowns Grid - 6 columns on large screens */}
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6 text-xs">
           {/* Era Filter */}
           <div>
             <label className="block text-[11px] font-medium text-[#a6adc8] mb-1">Historical Era</label>
@@ -96,8 +161,8 @@ export const FilterBar: React.FC<FilterBarProps> = ({
             >
               <option value="All">All Eras (1929–2026)</option>
               <option value="Pre-War (1929-1941)">Pre-War (1929–1941)</option>
-              <option value="Post-War Classic (1952-1965)">Post-War (1952–1965)</option>
-              <option value="Neue Klasse & 70s (1966-1989)">Neue Klasse & Classic (1966–1989)</option>
+              <option value="Post-War Classic (1952-1965)">Post-War Classic (1952–1965)</option>
+              <option value="Neue Klasse & 70s (1966-1989)">Neue Klasse & 70s (1966–1989)</option>
               <option value="Modern Era (1990-2015)">Modern Era (1990–2015)</option>
               <option value="NextGen & Electrified (2016-2026)">NextGen & EV (2016–2026)</option>
             </select>
@@ -123,25 +188,44 @@ export const FilterBar: React.FC<FilterBarProps> = ({
               <option value="8 Series">8 Series</option>
               <option value="Z Series">Z Roadsters</option>
               <option value="i Series">i-Series (Electrified)</option>
-              <option value="Classic">Historical Pioneers (3/15, 328, 507, etc.)</option>
+              <option value="Classic">Historical Pioneers</option>
             </select>
           </div>
 
-          {/* Status Filter */}
+          {/* Horsepower Filter */}
           <div>
-            <label className="block text-[11px] font-medium text-[#a6adc8] mb-1">Lifecycle Status</label>
+            <label className="block text-[11px] font-medium text-[#a6adc8] mb-1">Horsepower (hp)</label>
             <select
-              value={filters.status}
-              onChange={(e) => setFilters(prev => ({ ...prev, status: e.target.value }))}
+              value={currentHpPreset}
+              onChange={(e) => handleHorsepowerPreset(e.target.value)}
               className="w-full rounded-lg glass-input p-2 text-xs text-white"
             >
-              <option value="All">All Statuses</option>
-              <option value="Active">Active (Currently Produced)</option>
-              <option value="Discontinued">Discontinued (Historical)</option>
+              <option value="all">All Power (0–1000 hp)</option>
+              <option value="under150">&lt; 150 hp (Entry / Classic)</option>
+              <option value="150-300">150 – 300 hp (Mid-Range)</option>
+              <option value="300-500">300 – 500 hp (High Output)</option>
+              <option value="over500">&gt; 500 hp (M Power / Supercar)</option>
             </select>
           </div>
 
-          {/* Fuel Type */}
+          {/* Production Years Filter */}
+          <div>
+            <label className="block text-[11px] font-medium text-[#a6adc8] mb-1">Production Years</label>
+            <select
+              value={currentYearPreset}
+              onChange={(e) => handleYearPreset(e.target.value)}
+              className="w-full rounded-lg glass-input p-2 text-xs text-white"
+            >
+              <option value="all">All Years (1929–2026)</option>
+              <option value="2020s">2020–2026 (Current Gen)</option>
+              <option value="2010s">2010–2019 (Modern F-Gen)</option>
+              <option value="2000s">2000–2009 (Bangle & E-Gen)</option>
+              <option value="1990s">1990–1999 (90s Classics)</option>
+              <option value="classic">1929–1989 (Vintage & Retro)</option>
+            </select>
+          </div>
+
+          {/* Fuel / Powertrain Type */}
           <div>
             <label className="block text-[11px] font-medium text-[#a6adc8] mb-1">Powertrain / Fuel</label>
             <select

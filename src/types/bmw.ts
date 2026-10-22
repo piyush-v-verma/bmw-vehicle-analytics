@@ -62,6 +62,15 @@ export interface BmwConflict {
   reason: string;
 }
 
+export interface YearlySalesRecord {
+  year: number;
+  units: number;
+  isCompleteYear: boolean;
+  monthsRecorded: number;
+  recordType: 'annual_record' | 'monthly_aggregated' | 'partial_monthly';
+  coverageLabel: string;
+}
+
 export interface EnrichedGeneration {
   generation_id: string;
   model_name: string;
@@ -74,7 +83,9 @@ export interface EnrichedGeneration {
   primaryVariant: BmwSpecs;
   sales: BmwSales[];
   totalSales: number;
-  yearlySales: { year: number; units: number }[];
+  annualSalesOnly: number; // Sum of only complete annual records (excluding partial YTD)
+  hasPartialSalesData: boolean; // Flag when the generation has partial YTD figures (e.g. 2024)
+  yearlySales: YearlySalesRecord[];
   sources: {
     history: BmwSource[];
     specs: BmwSource[];
@@ -96,6 +107,24 @@ export interface FilterState {
   maxHorsepower: number;
   minYear: number;
   maxYear: number;
-  sortBy: 'name' | 'year' | 'power' | 'speed' | 'sales' | 'acceleration';
+  sortBy: 'name' | 'year' | 'power' | 'speed' | 'sales' | 'acceleration' | 'weight_asc' | 'weight_desc';
   sortOrder: 'asc' | 'desc';
+}
+
+export interface DataValidationReport {
+  historyCount: number;
+  specsCount: number;
+  salesCount: number;
+  sourcesCount: {
+    history: number;
+    specs: number;
+    sales: number;
+  };
+  conflictsCount: number;
+  duplicateIds: string[];
+  orphanSpecs: string[];
+  orphanSales: string[];
+  invalidYears: string[];
+  lowConfidenceSources: BmwSource[];
+  isValid: boolean;
 }

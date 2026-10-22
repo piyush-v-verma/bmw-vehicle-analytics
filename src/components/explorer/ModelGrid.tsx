@@ -145,6 +145,24 @@ export const ModelGrid: React.FC<ModelGridProps> = ({
         if (!matchesDrive) return false;
       }
 
+      // 7. Horsepower range filter (check highest output among variants)
+      const topHp = g.primaryVariant.horsepower_hp || 0;
+      if (filters.minHorsepower > 0 && topHp < filters.minHorsepower) {
+        return false;
+      }
+      if (filters.maxHorsepower < 1000 && topHp > filters.maxHorsepower) {
+        return false;
+      }
+
+      // 8. Production Year Range filter
+      const prodEnd = g.production_end || 2026;
+      if (filters.minYear > 1929 && prodEnd < filters.minYear) {
+        return false;
+      }
+      if (filters.maxYear < 2026 && g.production_start > filters.maxYear) {
+        return false;
+      }
+
       return true;
     }).sort((a, b) => {
       const order = filters.sortOrder === 'asc' ? 1 : -1;
@@ -164,7 +182,19 @@ export const ModelGrid: React.FC<ModelGridProps> = ({
         return (a.totalSales - b.totalSales) * order;
       }
       if (filters.sortBy === 'acceleration') {
-        return ((a.primaryVariant.acceleration_0_100_s || 99) - (b.primaryVariant.acceleration_0_100_s || 99)) * order;
+        const accA = a.primaryVariant.acceleration_0_100_s ?? 99;
+        const accB = b.primaryVariant.acceleration_0_100_s ?? 99;
+        return (accA - accB) * order;
+      }
+      if (filters.sortBy === 'weight_asc') {
+        const wA = a.primaryVariant.weight_kg ?? 99999;
+        const wB = b.primaryVariant.weight_kg ?? 99999;
+        return (wA - wB) * order;
+      }
+      if (filters.sortBy === 'weight_desc') {
+        const wA = a.primaryVariant.weight_kg ?? 0;
+        const wB = b.primaryVariant.weight_kg ?? 0;
+        return (wA - wB) * order;
       }
       return 0;
     });
@@ -224,64 +254,19 @@ export const ModelGrid: React.FC<ModelGridProps> = ({
         </div>
       )}
 
-      {/* Models Grid */}
+      {/* Model Cards Grid */}
       {loading ? (
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {Array.from({ length: 12 }).map((_, idx) => (
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {Array.from({ length: 8 }).map((_, idx) => (
             <ModelCardSkeleton key={idx} />
           ))}
         </div>
-      ) : paginatedGenerations.length > 0 ? (
-        <>
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {paginatedGenerations.map((model) => (
-              <ModelCard
-                key={model.generation_id}
-                model={model}
-                onSelect={onSelectModel}
-                isCompared={comparedModels.some(c => c.generation_id === model.generation_id)}
-                onToggleCompare={onToggleCompare}
-              />
-            ))}
-          </div>
-
-          {/* Pagination Controls */}
-          {totalPages > 1 && (
-            <div className="flex items-center justify-between border-t border-[#313244] pt-4 text-xs">
-              <span className="text-[#a6adc8]">
-                Page <strong className="text-white font-mono">{currentPage}</strong> of <strong className="text-white font-mono">{totalPages}</strong> ({filteredGenerations.length} total models)
-              </span>
-
-              <div className="flex items-center gap-1.5">
-                <button
-                  onClick={() => setCurrentPage(p => Math.max(p - 1, 1))}
-                  disabled={currentPage === 1}
-                  className="flex items-center gap-1 rounded-lg bg-[#181825] px-3 py-1.5 text-white disabled:opacity-30 border border-[#313244] hover:bg-[#313244] transition-all"
-                >
-                  <ChevronLeft className="h-3.5 w-3.5" />
-                  Previous
-                </button>
-
-                <button
-                  onClick={() => setCurrentPage(p => Math.min(p + 1, totalPages))}
-                  disabled={currentPage === totalPages}
-                  className="flex items-center gap-1 rounded-lg bg-[#181825] px-3 py-1.5 text-white disabled:opacity-30 border border-[#313244] hover:bg-[#313244] transition-all"
-                >
-                  Next
-                  <ChevronRight className="h-3.5 w-3.5" />
-                </button>
-              </div>
-            </div>
-          )}
-        </>
-      ) : (
-        <div className="glass-card rounded-2xl p-12 text-center">
-          <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-white/5 text-[#a6adc8] mb-4">
-            <SearchX className="h-7 w-7" />
-          </div>
-          <h3 className="text-lg font-bold text-white font-['Outfit']">No Matching BMW Vehicles Found</h3>
-          <p className="mt-1 text-xs text-[#a6adc8] max-w-sm mx-auto">
-            Try adjusting your search terms, changing the historical era, or clearing active filters.
+      ) : filteredGenerations.length === 0 ? (
+        <div className="flex flex-col items-center justify-center rounded-3xl bg-[#11111b]/40 border border-dashed border-[#313244] py-16 px-4 text-center">
+          <SearchX className="h-12 w-12 text-[#a6adc8]/40 mb-3" />
+          <h3 className="text-base font-bold text-white font-['Outfit']">No BMW models match your filter criteria</h3>
+          <p className="mt-1 text-xs text-[#a6adc8] max-w-sm">
+            Try adjusting your search terms, resetting filters, or broadening the production era and horsepower criteria.
           </p>
           <button
             onClick={() => {
@@ -304,8 +289,84 @@ export const ModelGrid: React.FC<ModelGridProps> = ({
             }}
             className="mt-4 rounded-xl bg-[#b4befe] px-4 py-2 text-xs font-bold text-[#11111b] hover:bg-[#cba6f7] transition-all"
           >
-            Reset All Filters & Search
+            Reset All Filters
           </button>
+        </div>
+      ) : (
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {paginatedGenerations.map((model) => (
+            <ModelCard
+              key={model.generation_id}
+              model={model}
+              onSelect={onSelectModel}
+              isCompared={comparedModels.some((c) => c.generation_id === model.generation_id)}
+              onToggleCompare={onToggleCompare}
+            />
+          ))}
+        </div>
+      )}
+
+      {/* Modern Pagination Controls */}
+      {filteredGenerations.length > ITEMS_PER_PAGE && (
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-[#313244] pt-6 text-xs text-[#a6adc8]">
+          <div>
+            Showing <strong className="text-white">{Math.min((currentPage - 1) * ITEMS_PER_PAGE + 1, filteredGenerations.length)}</strong> to{' '}
+            <strong className="text-white">{Math.min(currentPage * ITEMS_PER_PAGE, filteredGenerations.length)}</strong> of{' '}
+            <strong className="text-white">{filteredGenerations.length}</strong> BMW models
+          </div>
+
+          <div className="flex items-center gap-1.5">
+            <button
+              onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+              disabled={currentPage === 1}
+              className="flex items-center gap-1 rounded-xl bg-[#181825] px-3 py-1.5 font-medium border border-[#313244] text-white disabled:opacity-30 disabled:pointer-events-none hover:bg-white/5 transition-all"
+            >
+              <ChevronLeft className="h-4 w-4" />
+              <span>Previous</span>
+            </button>
+
+            {/* Page number buttons */}
+            <div className="flex items-center gap-1">
+              {Array.from({ length: totalPages }).map((_, idx) => {
+                const pageNum = idx + 1;
+                // Only show around current page to avoid clutter
+                if (
+                  pageNum === 1 ||
+                  pageNum === totalPages ||
+                  (pageNum >= currentPage - 1 && pageNum <= currentPage + 1)
+                ) {
+                  return (
+                    <button
+                      key={pageNum}
+                      onClick={() => setCurrentPage(pageNum)}
+                      className={`h-8 w-8 rounded-xl font-mono text-xs font-semibold transition-all ${
+                        currentPage === pageNum
+                          ? 'bg-[#b4befe] text-[#11111b] shadow-sm font-bold'
+                          : 'bg-[#181825] text-[#a6adc8] hover:text-white border border-[#313244]'
+                      }`}
+                    >
+                      {pageNum}
+                    </button>
+                  );
+                } else if (
+                  (pageNum === 2 && currentPage > 3) ||
+                  (pageNum === totalPages - 1 && currentPage < totalPages - 2)
+                ) {
+                  return <span key={pageNum} className="px-1 text-[#a6adc8]">...</span>;
+                }
+                return null;
+              })}
+            </div>
+
+            <button
+              onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+              disabled={currentPage === totalPages}
+              className="flex items-center gap-1 rounded-xl bg-[#181825] px-3 py-1.5 font-medium border border-[#313244] text-white disabled:opacity-30 disabled:pointer-events-none hover:bg-white/5 transition-all"
+            >
+              <span>Next</span>
+              <ChevronRight className="h-4 w-4" />
+            </button>
+          </div>
         </div>
       )}
     </div>

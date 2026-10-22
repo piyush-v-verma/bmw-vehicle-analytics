@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { EnrichedGeneration, BmwSales } from '../../types/bmw';
 import {
   ResponsiveContainer,
@@ -12,7 +12,7 @@ import {
   Line,
   Cell
 } from 'recharts';
-import { TrendingUp, BarChart3, Calendar, DollarSign, ArrowUpRight } from 'lucide-react';
+import { TrendingUp, BarChart3, Calendar, ArrowUpRight, Info, ShieldCheck, Filter } from 'lucide-react';
 import { KpiCardSkeleton } from '../common/KpiCardSkeleton';
 import { ChartSkeleton } from '../common/ChartSkeleton';
 
@@ -29,7 +29,100 @@ export const SalesAnalyticsView: React.FC<SalesAnalyticsViewProps> = ({
   onSelectModel,
   loading
 }) => {
-  const [selectedSeries, setSelectedSeries] = useState<string>('All');
+  const [includePartialYtd, setIncludePartialYtd] = useState<boolean>(true);
+
+  // Dynamic calculations from validated data (no hardcoded claims)
+  const {
+    topGenerations,
+    annualTrend,
+    totalGlobalUnits,
+    topModel,
+    historicalSpan
+  } = useMemo(() => {
+    if (!generations || generations.length === 0) {
+      return {
+        topGenerations: [],
+        annualTrend: [],
+        totalGlobalUnits: 0,
+        topModel: null,
+        historicalSpan: { minYear: 1929, maxYear: 2026, spanYears: 98, firstModel: '', latestModel: '' }
+      };
+    }
+
+    // Determine ranking based on selected methodology (all vs complete annual only)
+    const sorted = [...generations].sort((a, b) => {
+      const volA = includePartialYtd ? a.totalSales : a.annualSalesOnly;
+      const volB = includePartialYtd ? b.totalSales : b.annualSalesOnly;
+      return volB - volA;
+    });
+
+    const top10 = sorted.slice(0, 10).map((g) => {
+      const vol = includePartialYtd ? g.totalSales : g.annualSalesOnly;
+      return {
+        id: g.generation_id.replace('BMW_', '').replace(/_/g, ' '),
+        rawId: g.generation_id,
+        fullModel: g,
+        sales: vol,
+        salesM: Number((vol / 1_000_000).toFixed(2)),
+        years: `${g.production_start}${g.production_end ? `–${g.production_end}` : '–pres.'}`,
+        hasPartial: g.hasPartialSalesData
+      };
+    });
+
+    // Aggregate global annual progression from generation yearlySales
+    // (which respects the strict authoritative annual vs monthly aggregation rule)
+    const yearVolumeMap = new Map<number, { units: number; isComplete: boolean; coverage: string }>();
+
+    for (const g of generations) {
+      for (const y of g.yearlySales) {
+        if (!includePartialYtd && !y.isCompleteYear) {
+          continue;
+        }
+        const current = yearVolumeMap.get(y.year) || { units: 0, isComplete: y.isCompleteYear, coverage: y.coverageLabel };
+        yearVolumeMap.set(y.year, {
+          units: current.units + y.units,
+          isComplete: current.isComplete && y.isCompleteYear,
+          coverage: y.coverageLabel
+        });
+      }
+    }
+
+    const trend = Array.from(yearVolumeMap.entries())
+      .map(([year, val]) => ({
+        year,
+        units: val.units,
+        unitsM: Number((val.units / 1_000_000).toFixed(2)),
+        isComplete: val.isComplete,
+        coverage: val.coverage
+      }))
+      .sort((a, b) => a.year - b.year);
+
+    const totalUnits = trend.reduce((sum, item) => sum + item.units, 0);
+
+    // Dynamic historical span calculation
+    const starts = generations.map(g => g.production_start).filter(Boolean);
+    const ends = generations.map(g => g.production_end || 2026).filter(Boolean);
+    const minYear = starts.length > 0 ? Math.min(...starts) : 1929;
+    const maxYear = ends.length > 0 ? Math.max(...ends) : 2026;
+    const spanYears = maxYear - minYear + 1;
+
+    const firstModelObj = generations.find(g => g.production_start === minYear);
+    const latestModelObj = generations.find(g => (g.production_end || 2026) === maxYear);
+
+    return {
+      topGenerations: top10,
+      annualTrend: trend,
+      totalGlobalUnits: totalUnits,
+      topModel: sorted[0] || null,
+      historicalSpan: {
+        minYear,
+        maxYear,
+        spanYears,
+        firstModel: firstModelObj?.model_name || 'Dixi 3/15',
+        latestModel: latestModelObj?.model_name || 'Electrified Fleet'
+      }
+    };
+  }, [generations, includePartialYtd]);
 
   if (loading) {
     return (
@@ -47,87 +140,99 @@ export const SalesAnalyticsView: React.FC<SalesAnalyticsViewProps> = ({
     );
   }
 
-  // Top 10 Best Selling Generations
-  const topGenerations = [...generations]
-    .sort((a, b) => b.totalSales - a.totalSales)
-    .slice(0, 10)
-    .map((g) => ({
-      id: g.generation_id.replace('BMW_', '').replace(/_/g, ' '),
-      fullModel: g,
-      sales: g.totalSales,
-      salesM: Number((g.totalSales / 1_000_000).toFixed(2)),
-      years: `${g.production_start}${g.production_end ? `–${g.production_end}` : '–pres.'}`
-    }));
-
-  // Monthly delivery breakdown for recent years (where month is present)
-  const monthlyData = allSales
-    .filter((s) => s.month !== null && s.month !== undefined && s.year >= 2024)
-    .map((s) => ({
-      label: `${s.generation_id.replace('BMW_', '')} M${s.month}`,
-      units: s.units_sold,
-      month: `Month ${s.month}`,
-      gid: s.generation_id
-    }));
-
-  // Annual sales summary
-  const annualMap = new Map<number, number>();
-  for (const s of allSales) {
-    annualMap.set(s.year, (annualMap.get(s.year) || 0) + s.units_sold);
-  }
-
-  const annualTrend = Array.from(annualMap.entries())
-    .map(([year, units]) => ({ year, units, unitsM: Number((units / 1_000_000).toFixed(2)) }))
-    .sort((a, b) => a.year - b.year);
-
-  const totalGlobalUnits = Array.from(annualMap.values()).reduce((a, b) => a + b, 0);
-
   return (
     <div className="space-y-6">
-      {/* Top Banner Stats */}
+      {/* Methodology Controls Bar */}
+      <div className="glass-card rounded-2xl p-4 border border-[#313244] flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        <div className="flex items-center gap-2">
+          <ShieldCheck className="h-4 w-4 text-[#a6e3a1]" />
+          <div>
+            <span className="text-xs font-bold text-white">Audited Methodology Controls</span>
+            <p className="text-[11px] text-[#a6adc8]">Strict annual precedence • Zero double-counting • Explicit YTD granularity</p>
+          </div>
+        </div>
+
+        <div className="flex items-center gap-2">
+          <span className="text-xs text-[#a6adc8] flex items-center gap-1">
+            <Filter className="h-3 w-3" /> Data Scope:
+          </span>
+          <button
+            onClick={() => setIncludePartialYtd(true)}
+            className={`rounded-lg px-2.5 py-1 text-xs font-medium transition-all ${
+              includePartialYtd
+                ? 'bg-[#b4befe] text-[#11111b] font-bold shadow-sm'
+                : 'bg-[#181825] text-[#a6adc8] hover:text-white border border-[#313244]'
+            }`}
+          >
+            All Deliveries (Incl. 2024 YTD)
+          </button>
+          <button
+            onClick={() => setIncludePartialYtd(false)}
+            className={`rounded-lg px-2.5 py-1 text-xs font-medium transition-all ${
+              !includePartialYtd
+                ? 'bg-[#b4befe] text-[#11111b] font-bold shadow-sm'
+                : 'bg-[#181825] text-[#a6adc8] hover:text-white border border-[#313244]'
+            }`}
+          >
+            Completed Annual Only (1929–2023)
+          </button>
+        </div>
+      </div>
+
+      {/* Top Banner Stats - 100% Calculated Dynamically */}
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+        {/* Total Calculated Deliveries */}
         <div className="glass-card rounded-2xl p-5 border border-[#313244]">
           <div className="flex items-center justify-between text-xs text-[#a6adc8]">
             <span className="uppercase font-semibold tracking-wider">Total Recorded Volume</span>
             <TrendingUp className="h-4 w-4 text-[#94e2d5]" />
           </div>
           <div className="text-3xl font-black text-white font-['Outfit'] mt-2">
-            {(totalGlobalUnits / 1_000_000).toFixed(2)}M+
+            {(totalGlobalUnits / 1_000_000).toFixed(2)}M
           </div>
-          <p className="text-xs text-[#a6adc8] mt-1">Verified global deliveries across 1929–2024</p>
+          <p className="text-xs text-[#a6adc8] mt-1">
+            Audited global deliveries across {annualTrend.length} recorded calendar years ({historicalSpan.minYear}–{includePartialYtd ? '2024 YTD' : '2023'})
+          </p>
         </div>
 
+        {/* Dynamically Computed Top-Selling Generation */}
         <div className="glass-card rounded-2xl p-5 border border-[#313244]">
           <div className="flex items-center justify-between text-xs text-[#a6adc8]">
             <span className="uppercase font-semibold tracking-wider">Top-Selling Generation</span>
             <BarChart3 className="h-4 w-4 text-[#b4befe]" />
           </div>
-          <div className="text-3xl font-black text-[#b4befe] font-['Outfit'] mt-2">
-            3 Series E46
+          <div className="text-2xl font-black text-[#b4befe] font-['Outfit'] mt-2 truncate" title={topModel?.model_name}>
+            {topModel ? `${topModel.model_name} (${topModel.generation_id.replace('BMW_', '')})` : 'N/A'}
           </div>
-          <p className="text-xs text-[#a6adc8] mt-1">3.27 Million units produced (1997–2006)</p>
+          <p className="text-xs text-[#a6adc8] mt-1">
+            {topModel ? `${(topModel.totalSales / 1_000_000).toFixed(2)}M units verified (${topModel.production_start}–${topModel.production_end || 'pres.'})` : ''}
+          </p>
         </div>
 
+        {/* Dynamically Computed Historical Span */}
         <div className="glass-card rounded-2xl p-5 border border-[#313244]">
           <div className="flex items-center justify-between text-xs text-[#a6adc8]">
-            <span className="uppercase font-semibold tracking-wider">Historical Time Span</span>
+            <span className="uppercase font-semibold tracking-wider">Calculated Historical Span</span>
             <Calendar className="h-4 w-4 text-[#f9e2af]" />
           </div>
           <div className="text-3xl font-black text-[#f9e2af] font-['Outfit'] mt-2">
-            97 Years
+            {historicalSpan.spanYears} Years
           </div>
-          <p className="text-xs text-[#a6adc8] mt-1">1929 Pre-War 3/15 to 2026 Electrified Lineup</p>
+          <p className="text-xs text-[#a6adc8] mt-1 truncate" title={`${historicalSpan.minYear} ${historicalSpan.firstModel} to ${historicalSpan.maxYear}`}>
+            {historicalSpan.minYear} {historicalSpan.firstModel} to {historicalSpan.maxYear}
+          </p>
         </div>
       </div>
 
       {/* Top 10 Leaderboard Bar Chart */}
       <div className="glass-card rounded-2xl p-5 border border-[#313244]">
-        <div className="flex items-center justify-between border-b border-[#313244] pb-4 mb-4">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between border-b border-[#313244] pb-4 mb-4 gap-2">
           <div>
             <h3 className="text-base font-bold text-white font-['Outfit']">
               Top 10 Best-Selling BMW Generations of All Time
             </h3>
             <p className="text-xs text-[#a6adc8] mt-0.5">
-              Ranked by cumulative global manufacturing and delivery volume (Bar Graph)
+              Ranked by cumulative lifecycle manufacturing & deliveries ({includePartialYtd ? 'All validated data' : 'Completed annual years only'})
             </p>
           </div>
           <span className="text-xs text-[#94e2d5] font-mono font-semibold">
@@ -144,7 +249,7 @@ export const SalesAnalyticsView: React.FC<SalesAnalyticsViewProps> = ({
               <Tooltip
                 formatter={(val: any, name: any, item: any) => [
                   `${item.payload.sales.toLocaleString()} units (${item.payload.salesM} Million)`,
-                  'Total Volume'
+                  'Cumulative Volume'
                 ]}
                 labelFormatter={(label) => `BMW ${label}`}
                 contentStyle={{ backgroundColor: '#181825', borderColor: '#313244', borderRadius: '10px' }}
@@ -162,15 +267,18 @@ export const SalesAnalyticsView: React.FC<SalesAnalyticsViewProps> = ({
         </div>
       </div>
 
-      {/* Grid: Global Annual Progression & Monthly 2024 Breakdowns */}
+      {/* Grid: Global Annual Progression & Ranked Series Table */}
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
         {/* Annual Timeline Line Chart */}
         <div className="glass-card rounded-2xl p-5 border border-[#313244]">
           <div className="flex items-center justify-between border-b border-[#313244] pb-3 mb-4">
-            <h4 className="text-sm font-bold text-white font-['Outfit']">
-              Annual Global Deliveries Growth (1929–2024)
-            </h4>
-            <span className="text-xs text-[#b4befe] font-mono">Line Graph</span>
+            <div>
+              <h4 className="text-sm font-bold text-white font-['Outfit']">
+                Annual Global Deliveries Progression ({historicalSpan.minYear}–{includePartialYtd ? '2024 YTD' : '2023'})
+              </h4>
+              <p className="text-[11px] text-[#a6adc8]">Aggregated by verified calendar year</p>
+            </div>
+            <span className="text-xs text-[#b4befe] font-mono">Deliveries Trend</span>
           </div>
           <div className="h-64 w-full">
             <ResponsiveContainer width="100%" height="100%">
@@ -179,7 +287,10 @@ export const SalesAnalyticsView: React.FC<SalesAnalyticsViewProps> = ({
                 <XAxis dataKey="year" stroke="#a6adc8" fontSize={10} />
                 <YAxis stroke="#a6adc8" fontSize={10} tickFormatter={(v) => `${(v/1_000_000).toFixed(1)}M`} />
                 <Tooltip 
-                  formatter={(v: any) => [`${Number(v).toLocaleString()} units`, 'Deliveries']}
+                  formatter={(v: any, name: any, item: any) => [
+                    `${Number(v).toLocaleString()} units ${item.payload.isComplete ? '(Full Year)' : '(Partial YTD)'}`,
+                    'Deliveries'
+                  ]}
                   contentStyle={{ backgroundColor: '#181825', borderColor: '#313244', borderRadius: '10px' }}
                 />
                 <Line type="monotone" dataKey="units" stroke="#94e2d5" strokeWidth={2.5} dot={false} />
@@ -195,13 +306,13 @@ export const SalesAnalyticsView: React.FC<SalesAnalyticsViewProps> = ({
               <h4 className="text-sm font-bold text-white font-['Outfit']">
                 Historical Series Volume Overview
               </h4>
-              <span className="text-xs text-[#a6adc8]">Ranked</span>
+              <span className="text-xs text-[#a6adc8]">Click to inspect specs</span>
             </div>
 
             <div className="overflow-y-auto max-h-56 pr-2 space-y-2 text-xs">
               {topGenerations.map((g, idx) => (
                 <div
-                  key={g.id}
+                  key={g.rawId}
                   onClick={() => onSelectModel(g.fullModel)}
                   className="flex items-center justify-between rounded-xl bg-[#11111b] p-2.5 border border-[#313244] hover:border-[#b4befe]/40 cursor-pointer transition-all"
                 >
@@ -210,7 +321,14 @@ export const SalesAnalyticsView: React.FC<SalesAnalyticsViewProps> = ({
                       #{idx + 1}
                     </span>
                     <div>
-                      <div className="font-bold text-white">{g.fullModel.model_name}</div>
+                      <div className="font-bold text-white flex items-center gap-1.5">
+                        <span>{g.fullModel.model_name}</span>
+                        {g.hasPartial && (
+                          <span className="text-[9px] px-1.5 py-0.2 rounded bg-[#f9e2af]/20 text-[#f9e2af] border border-[#f9e2af]/30">
+                            +2024 YTD
+                          </span>
+                        )}
+                      </div>
                       <div className="text-[10px] text-[#a6adc8] font-mono">{g.id} ({g.years})</div>
                     </div>
                   </div>
@@ -222,6 +340,28 @@ export const SalesAnalyticsView: React.FC<SalesAnalyticsViewProps> = ({
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Methodology and Statistical Fairness Note */}
+      <div className="rounded-2xl bg-[#11111b] p-4 border border-[#313244] text-xs text-[#a6adc8] space-y-2">
+        <div className="flex items-center gap-2 font-bold text-white">
+          <Info className="h-4 w-4 text-[#94e2d5]" />
+          <span>Statistical Methodology & Data Fairness Disclaimer</span>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 text-[11px] leading-relaxed pt-1">
+          <div className="rounded-xl bg-[#181825] p-3 border border-[#313244]/60">
+            <strong className="text-white block mb-1">1. Authoritative Precedence</strong>
+            When both annual financial totals and monthly delivery figures exist for the same period, authoritative annual audited reports are prioritized to prevent double-counting.
+          </div>
+          <div className="rounded-xl bg-[#181825] p-3 border border-[#313244]/60">
+            <strong className="text-white block mb-1">2. Complete vs. Partial Granularity</strong>
+            Full 12-month records are aggregated to complete annual figures. Incomplete records (e.g. 2024 with 6 months) are explicitly isolated as partial YTD deliveries and labeled as such.
+          </div>
+          <div className="rounded-xl bg-[#181825] p-3 border border-[#313244]/60">
+            <strong className="text-white block mb-1">3. Cumulative vs Annual Fair Comparison</strong>
+            Cumulative lifecycle totals reflect total vehicle production across all production years, whereas annual trends report single-year deliveries without conflating the two metrics.
           </div>
         </div>
       </div>

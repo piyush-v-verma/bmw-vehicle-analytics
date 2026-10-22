@@ -4,12 +4,11 @@ import {
   Zap, 
   Flame, 
   Gauge, 
-  Weight, 
   Layers, 
   GitCompare, 
-  Calendar,
   Fuel,
-  ExternalLink
+  ExternalLink,
+  ShieldCheck
 } from 'lucide-react';
 
 interface ModelCardProps {
@@ -53,7 +52,6 @@ export const ModelCard: React.FC<ModelCardProps> = ({
           onLoad={() => setImgLoaded(true)}
           onError={(e) => {
             setImgLoaded(true);
-            // High-res fallback
             (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=80';
           }}
         />
@@ -131,10 +129,14 @@ export const ModelCard: React.FC<ModelCardProps> = ({
               <div className="flex h-6 w-6 items-center justify-center rounded-lg bg-[#f38ba8]/15 text-[#f38ba8]">
                 <Flame className="h-3.5 w-3.5" />
               </div>
-              <div>
+              <div className="overflow-hidden">
                 <div className="text-[10px] text-[#a6adc8]">Power</div>
-                <div className="font-mono font-bold text-white">
-                  {p.horsepower_hp ? `${p.horsepower_hp} hp` : 'N/A'}
+                <div className="font-mono font-bold text-white truncate">
+                  {p.horsepower_hp && p.horsepower_hp > 0 ? (
+                    `${p.horsepower_hp} hp`
+                  ) : (
+                    <span className="text-[10px] text-[#a6adc8]/60 font-sans italic">Spec unavailable</span>
+                  )}
                 </div>
               </div>
             </div>
@@ -144,10 +146,14 @@ export const ModelCard: React.FC<ModelCardProps> = ({
               <div className="flex h-6 w-6 items-center justify-center rounded-lg bg-[#89b4fa]/15 text-[#89b4fa]">
                 <Gauge className="h-3.5 w-3.5" />
               </div>
-              <div>
+              <div className="overflow-hidden">
                 <div className="text-[10px] text-[#a6adc8]">0–100 km/h</div>
-                <div className="font-mono font-bold text-white">
-                  {p.acceleration_0_100_s ? `${p.acceleration_0_100_s}s` : 'N/A'}
+                <div className="font-mono font-bold text-white truncate">
+                  {p.acceleration_0_100_s ? (
+                    `${p.acceleration_0_100_s}s`
+                  ) : (
+                    <span className="text-[10px] text-[#a6adc8]/60 font-sans italic">Spec unavailable</span>
+                  )}
                 </div>
               </div>
             </div>
@@ -157,10 +163,14 @@ export const ModelCard: React.FC<ModelCardProps> = ({
               <div className="flex h-6 w-6 items-center justify-center rounded-lg bg-[#f9e2af]/15 text-[#f9e2af]">
                 <Zap className="h-3.5 w-3.5" />
               </div>
-              <div>
+              <div className="overflow-hidden">
                 <div className="text-[10px] text-[#a6adc8]">Top Speed</div>
-                <div className="font-mono font-bold text-white">
-                  {p.top_speed_kmh ? `${p.top_speed_kmh} km/h` : 'N/A'}
+                <div className="font-mono font-bold text-white truncate">
+                  {p.top_speed_kmh && p.top_speed_kmh > 0 ? (
+                    `${p.top_speed_kmh} km/h`
+                  ) : (
+                    <span className="text-[10px] text-[#a6adc8]/60 font-sans italic">Spec unavailable</span>
+                  )}
                 </div>
               </div>
             </div>
@@ -170,9 +180,9 @@ export const ModelCard: React.FC<ModelCardProps> = ({
               <div className="flex h-6 w-6 items-center justify-center rounded-lg bg-[#94e2d5]/15 text-[#94e2d5]">
                 <Fuel className="h-3.5 w-3.5" />
               </div>
-              <div>
+              <div className="overflow-hidden">
                 <div className="text-[10px] text-[#a6adc8]">Drivetrain</div>
-                <div className="font-mono font-bold text-white truncate max-w-[80px]">
+                <div className="font-mono font-bold text-white truncate">
                   {p.drivetrain} • {p.fuel_type === 'Plug-in Hybrid' ? 'PHEV' : p.fuel_type}
                 </div>
               </div>
@@ -182,13 +192,18 @@ export const ModelCard: React.FC<ModelCardProps> = ({
 
         {/* Action Button & Sales Footer */}
         <div className="mt-4 border-t border-[#313244] pt-3 flex items-center justify-between">
-          <div className="text-[11px] text-[#a6adc8]">
+          <div className="text-[11px] text-[#a6adc8] flex items-center gap-1.5">
             {model.totalSales > 0 ? (
               <span>
                 Sales: <strong className="text-white font-mono">{model.totalSales >= 1_000_000 ? `${(model.totalSales / 1_000_000).toFixed(2)}M` : model.totalSales.toLocaleString()}</strong>
               </span>
             ) : (
-              <span className="text-[#a6adc8]/60">Annual data</span>
+              <span className="text-[#a6adc8]/60">Annual deliveries</span>
+            )}
+            {model.sources.history.length > 0 && (
+              <span title="Verified with BMW Historical Archive">
+                <ShieldCheck className="h-3 w-3 text-[#a6e3a1]" />
+              </span>
             )}
           </div>
 

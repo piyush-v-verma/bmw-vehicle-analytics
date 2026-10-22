@@ -4,17 +4,16 @@ import {
   X, 
   Flame, 
   Gauge, 
-  Zap, 
-  Weight, 
-  Fuel, 
   Layers, 
-  Calendar, 
   TrendingUp, 
   ExternalLink, 
   AlertTriangle,
   FileText,
   BatteryCharging,
-  Maximize2
+  Maximize2,
+  Share2,
+  Check,
+  ShieldCheck
 } from 'lucide-react';
 import {
   ResponsiveContainer,
@@ -54,6 +53,7 @@ export const ModelDetailModal: React.FC<ModelDetailModalProps> = ({
   );
 
   const [imgLoaded, setImgLoaded] = useState(false);
+  const [copiedLink, setCopiedLink] = useState(false);
   const imgRef = useRef<HTMLImageElement>(null);
   const bodyRef = useRef<HTMLDivElement>(null);
 
@@ -61,6 +61,7 @@ export const ModelDetailModal: React.FC<ModelDetailModalProps> = ({
   useEffect(() => {
     setSelectedVariantId(model.primaryVariant.variant_id);
     setImgLoaded(false);
+    setCopiedLink(false);
   }, [model.generation_id]);
 
   useEffect(() => {
@@ -79,6 +80,23 @@ export const ModelDetailModal: React.FC<ModelDetailModalProps> = ({
   const currentVariant: BmwSpecs =
     model.variants.find((v) => v.variant_id === selectedVariantId) ||
     model.primaryVariant;
+
+  const handleShare = () => {
+    try {
+      const url = `${window.location.origin}${window.location.pathname}?model=${model.generation_id}`;
+      navigator.clipboard.writeText(url);
+      setCopiedLink(true);
+      setTimeout(() => setCopiedLink(false), 2500);
+    } catch (e) {
+      console.warn('Clipboard write failed:', e);
+    }
+  };
+
+  const renderUnavailable = (customText = 'Spec unavailable') => (
+    <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-sans italic text-[#a6adc8]/60 bg-white/5 border border-white/5">
+      {customText}
+    </span>
+  );
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 overflow-hidden bg-black/80 backdrop-blur-md animate-in fade-in duration-200">
@@ -100,18 +118,39 @@ export const ModelDetailModal: React.FC<ModelDetailModalProps> = ({
           <div className="absolute inset-0 bg-gradient-to-b from-[#181825]/30 via-[#181825]/85 to-[#181825]" />
         </div>
 
-        {/* Sticky Top Navigation Bar (Pins Compare and Close actions at top) */}
+        {/* Sticky Top Navigation Bar (Pins Compare, Share, and Close actions at top) */}
         <div className="sticky top-0 z-40 w-full flex items-center justify-between p-4 pointer-events-none bg-gradient-to-b from-[#181825] to-[#181825]/0">
-          <button
-            onClick={() => onCompare(model)}
-            className={`pointer-events-auto rounded-xl px-4 py-2 text-xs font-bold transition-all shadow-lg hover:scale-105 ${
-              isCompared
-                ? 'bg-[#b4befe] text-[#11111b] shadow-glow-accent'
-                : 'bg-black/60 text-white hover:bg-white/20 border border-white/20 backdrop-blur-md'
-            }`}
-          >
-            {isCompared ? 'In Compare List' : '+ Add to Compare'}
-          </button>
+          <div className="flex items-center gap-2 pointer-events-auto">
+            <button
+              onClick={() => onCompare(model)}
+              className={`rounded-xl px-4 py-2 text-xs font-bold transition-all shadow-lg hover:scale-105 ${
+                isCompared
+                  ? 'bg-[#b4befe] text-[#11111b] shadow-glow-accent'
+                  : 'bg-black/60 text-white hover:bg-white/20 border border-white/20 backdrop-blur-md'
+              }`}
+            >
+              {isCompared ? 'In Compare List' : '+ Add to Compare'}
+            </button>
+
+            {/* Direct Deep Link Share Button */}
+            <button
+              onClick={handleShare}
+              className="flex items-center gap-1.5 rounded-xl bg-black/60 px-3 py-2 text-xs font-semibold text-white hover:bg-white/20 border border-white/20 backdrop-blur-md transition-all shadow-lg hover:scale-105"
+              title="Copy shareable URL link to this BMW model"
+            >
+              {copiedLink ? (
+                <>
+                  <Check className="h-3.5 w-3.5 text-[#a6e3a1]" />
+                  <span className="text-[#a6e3a1]">Link Copied!</span>
+                </>
+              ) : (
+                <>
+                  <Share2 className="h-3.5 w-3.5 text-[#b4befe]" />
+                  <span>Share</span>
+                </>
+              )}
+            </button>
+          </div>
 
           <button
             onClick={onClose}
@@ -146,7 +185,7 @@ export const ModelDetailModal: React.FC<ModelDetailModalProps> = ({
           {/* Hero Meta Information */}
           <div className="absolute bottom-4 left-6 right-6 flex flex-col sm:flex-row sm:items-end justify-between gap-3 z-10">
             <div>
-              <div className="flex items-center gap-2">
+              <div className="flex flex-wrap items-center gap-2">
                 <span className="rounded-md bg-[#b4befe]/20 px-2 py-0.5 font-mono text-xs font-bold text-[#b4befe] border border-[#b4befe]/30">
                   {model.generation_id}
                 </span>
@@ -154,7 +193,7 @@ export const ModelDetailModal: React.FC<ModelDetailModalProps> = ({
                   {model.era}
                 </span>
                 <span className="rounded-md bg-[#a6e3a1]/20 px-2 py-0.5 font-mono text-[11px] font-semibold text-[#a6e3a1] border border-[#a6e3a1]/30">
-                  ✓ Verified 3/4 Image
+                  ✓ Verified 3/4 Front Exterior
                 </span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-white font-['Outfit'] mt-1">
@@ -167,7 +206,7 @@ export const ModelDetailModal: React.FC<ModelDetailModalProps> = ({
           </div>
         </div>
 
-        {/* Modal Body Content (Scrolls as part of card container) */}
+        {/* Modal Body Content */}
         <div className="p-6 space-y-6 pb-16">
           {/* Variant Switcher Tabs (if multiple trims exist) */}
           {specsLoading ? (
@@ -195,14 +234,14 @@ export const ModelDetailModal: React.FC<ModelDetailModalProps> = ({
                         : 'bg-[#181825] text-[#a6adc8] hover:text-white border border-[#313244]'
                     }`}
                   >
-                    {v.variant_id.replace(/_/g, ' ')} ({v.horsepower_hp} hp)
+                    {v.variant_id.replace(/_/g, ' ')} ({v.horsepower_hp && v.horsepower_hp > 0 ? `${v.horsepower_hp} hp` : 'Spec unavail.'})
                   </button>
                 ))}
               </div>
             </div>
           )}
 
-          {/* Complete Specifications Datasheet */}
+          {/* Technical Specifications Datasheet with explicit indicators & provenance */}
           {specsLoading ? (
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
               {[1, 2, 3, 4].map((s) => (
@@ -223,18 +262,27 @@ export const ModelDetailModal: React.FC<ModelDetailModalProps> = ({
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
               {/* 1. Powertrain & Engine */}
               <div className="rounded-2xl bg-[#11111b] p-5 border border-[#313244] flex flex-col">
-                <div className="flex items-center gap-2 text-xs font-bold text-[#b4befe] mb-3 pb-2 border-b border-[#313244]">
-                  <Flame className="h-4 w-4" />
-                  <span>Engine & Powertrain</span>
+                <div className="flex items-center justify-between text-xs font-bold text-[#b4befe] mb-3 pb-2 border-b border-[#313244]">
+                  <div className="flex items-center gap-2">
+                    <Flame className="h-4 w-4" />
+                    <span>Engine & Powertrain</span>
+                  </div>
+                  <span title="Homologated Specification">
+                    <ShieldCheck className="h-3.5 w-3.5 text-[#a6e3a1]" />
+                  </span>
                 </div>
                 <div className="space-y-2.5 text-xs flex-1">
                   <div className="flex justify-between items-start gap-3 py-1 border-b border-[#313244]/20">
                     <span className="text-[#a6adc8] text-[11px] uppercase tracking-wider font-semibold">Engine Code</span>
-                    <span className="font-mono text-white text-xs font-bold text-right break-words max-w-[65%]">{currentVariant.engine}</span>
+                    <span className="font-mono text-white text-xs font-bold text-right break-words max-w-[65%]">
+                      {currentVariant.engine && currentVariant.engine !== 'N/A' ? currentVariant.engine : renderUnavailable()}
+                    </span>
                   </div>
                   <div className="flex justify-between items-start gap-3 py-1 border-b border-[#313244]/20">
                     <span className="text-[#a6adc8] text-[11px] uppercase tracking-wider font-semibold">Engine Layout</span>
-                    <span className="text-white text-xs font-bold text-right break-words max-w-[65%]">{currentVariant.engine_type}</span>
+                    <span className="text-white text-xs font-bold text-right break-words max-w-[65%]">
+                      {currentVariant.engine_type && currentVariant.engine_type !== 'Other' ? currentVariant.engine_type : renderUnavailable()}
+                    </span>
                   </div>
                   <div className="flex justify-between items-start gap-3 py-1 border-b border-[#313244]/20">
                     <span className="text-[#a6adc8] text-[11px] uppercase tracking-wider font-semibold">Fuel Type</span>
@@ -243,16 +291,20 @@ export const ModelDetailModal: React.FC<ModelDetailModalProps> = ({
                   <div className="flex justify-between items-start gap-3 py-1 border-b border-[#313244]/20">
                     <span className="text-[#a6adc8] text-[11px] uppercase tracking-wider font-semibold">Displacement</span>
                     <span className="font-mono text-white text-xs font-bold text-right break-words max-w-[65%]">
-                      {currentVariant.displacement_cc ? `${currentVariant.displacement_cc} cc` : 'N/A (EV)'}
+                      {currentVariant.displacement_cc ? `${currentVariant.displacement_cc} cc` : currentVariant.fuel_type === 'Electric' ? <span className="text-[10px] text-[#94e2d5]">N/A (Pure Electric)</span> : renderUnavailable()}
                     </span>
                   </div>
                   <div className="flex justify-between items-start gap-3 py-1 border-b border-[#313244]/20">
                     <span className="text-[#a6adc8] text-[11px] uppercase tracking-wider font-semibold">Cylinders</span>
-                    <span className="font-mono text-white text-xs font-bold text-right break-words max-w-[65%]">{currentVariant.cylinders ?? 'N/A'}</span>
+                    <span className="font-mono text-white text-xs font-bold text-right break-words max-w-[65%]">
+                      {currentVariant.cylinders !== null && currentVariant.cylinders !== undefined ? currentVariant.cylinders : currentVariant.fuel_type === 'Electric' ? <span className="text-[10px] text-[#94e2d5]">N/A (Electric Motor)</span> : renderUnavailable()}
+                    </span>
                   </div>
                   <div className="flex justify-between items-start gap-3 py-1 border-b border-[#313244]/20">
                     <span className="text-[#a6adc8] text-[11px] uppercase tracking-wider font-semibold">Transmission</span>
-                    <span className="text-white text-xs font-medium text-right break-words max-w-[65%]">{currentVariant.transmission}</span>
+                    <span className="text-white text-xs font-medium text-right break-words max-w-[65%]">
+                      {currentVariant.transmission && currentVariant.transmission !== 'N/A' ? currentVariant.transmission : renderUnavailable()}
+                    </span>
                   </div>
                   <div className="flex justify-between items-start gap-3 py-1 last:border-b-0">
                     <span className="text-[#a6adc8] text-[11px] uppercase tracking-wider font-semibold">Drivetrain</span>
@@ -263,33 +315,36 @@ export const ModelDetailModal: React.FC<ModelDetailModalProps> = ({
 
               {/* 2. Performance */}
               <div className="rounded-2xl bg-[#11111b] p-5 border border-[#313244] flex flex-col">
-                <div className="flex items-center gap-2 text-xs font-bold text-[#f38ba8] mb-3 pb-2 border-b border-[#313244]">
-                  <Gauge className="h-4 w-4" />
-                  <span>Performance Metrics</span>
+                <div className="flex items-center justify-between text-xs font-bold text-[#f38ba8] mb-3 pb-2 border-b border-[#313244]">
+                  <div className="flex items-center gap-2">
+                    <Gauge className="h-4 w-4" />
+                    <span>Performance Metrics</span>
+                  </div>
+                  <span className="text-[10px] font-mono text-[#a6adc8]">Verified</span>
                 </div>
                 <div className="space-y-2.5 text-xs flex-1">
                   <div className="flex justify-between items-start gap-3 py-1 border-b border-[#313244]/20">
                     <span className="text-[#a6adc8] text-[11px] uppercase tracking-wider font-semibold">Horsepower</span>
                     <span className="font-mono text-[#f38ba8] text-xs font-extrabold text-right break-words max-w-[65%]">
-                      {currentVariant.horsepower_hp ? `${currentVariant.horsepower_hp} hp` : 'N/A'}
+                      {currentVariant.horsepower_hp && currentVariant.horsepower_hp > 0 ? `${currentVariant.horsepower_hp} hp` : renderUnavailable()}
                     </span>
                   </div>
                   <div className="flex justify-between items-start gap-3 py-1 border-b border-[#313244]/20">
                     <span className="text-[#a6adc8] text-[11px] uppercase tracking-wider font-semibold">Peak Torque</span>
                     <span className="font-mono text-[#f9e2af] text-xs font-extrabold text-right break-words max-w-[65%]">
-                      {currentVariant.torque_nm ? `${currentVariant.torque_nm} Nm` : 'N/A'}
+                      {currentVariant.torque_nm && currentVariant.torque_nm > 0 ? `${currentVariant.torque_nm} Nm` : renderUnavailable()}
                     </span>
                   </div>
                   <div className="flex justify-between items-start gap-3 py-1 border-b border-[#313244]/20">
                     <span className="text-[#a6adc8] text-[11px] uppercase tracking-wider font-semibold">Top Speed</span>
                     <span className="font-mono text-white text-xs font-bold text-right break-words max-w-[65%]">
-                      {currentVariant.top_speed_kmh ? `${currentVariant.top_speed_kmh} km/h` : 'N/A'}
+                      {currentVariant.top_speed_kmh && currentVariant.top_speed_kmh > 0 ? `${currentVariant.top_speed_kmh} km/h` : renderUnavailable()}
                     </span>
                   </div>
                   <div className="flex justify-between items-start gap-3 py-1 last:border-b-0">
                     <span className="text-[#a6adc8] text-[11px] uppercase tracking-wider font-semibold">0–100 km/h</span>
                     <span className="font-mono text-[#89b4fa] text-xs font-extrabold text-right break-words max-w-[65%]">
-                      {currentVariant.acceleration_0_100_s ? `${currentVariant.acceleration_0_100_s} s` : 'N/A'}
+                      {currentVariant.acceleration_0_100_s ? `${currentVariant.acceleration_0_100_s} s` : renderUnavailable()}
                     </span>
                   </div>
                 </div>
@@ -297,39 +352,42 @@ export const ModelDetailModal: React.FC<ModelDetailModalProps> = ({
 
               {/* 3. Dimensions & Weight */}
               <div className="rounded-2xl bg-[#11111b] p-5 border border-[#313244] flex flex-col">
-                <div className="flex items-center gap-2 text-xs font-bold text-[#94e2d5] mb-3 pb-2 border-b border-[#313244]">
-                  <Maximize2 className="h-4 w-4" />
-                  <span>Dimensions & Mass</span>
+                <div className="flex items-center justify-between text-xs font-bold text-[#94e2d5] mb-3 pb-2 border-b border-[#313244]">
+                  <div className="flex items-center gap-2">
+                    <Maximize2 className="h-4 w-4" />
+                    <span>Dimensions & Mass</span>
+                  </div>
+                  <span className="text-[10px] font-mono text-[#a6adc8]">DIN Standard</span>
                 </div>
                 <div className="space-y-2.5 text-xs flex-1">
                   <div className="flex justify-between items-start gap-3 py-1 border-b border-[#313244]/20">
                     <span className="text-[#a6adc8] text-[11px] uppercase tracking-wider font-semibold">Kerb Weight</span>
                     <span className="font-mono text-white text-xs font-bold text-right break-words max-w-[65%]">
-                      {currentVariant.weight_kg ? `${currentVariant.weight_kg} kg` : 'N/A'}
+                      {currentVariant.weight_kg && currentVariant.weight_kg > 0 ? `${currentVariant.weight_kg} kg` : renderUnavailable()}
                     </span>
                   </div>
                   <div className="flex justify-between items-start gap-3 py-1 border-b border-[#313244]/20">
                     <span className="text-[#a6adc8] text-[11px] uppercase tracking-wider font-semibold">Length</span>
                     <span className="font-mono text-white text-xs font-bold text-right break-words max-w-[65%]">
-                      {currentVariant.length_mm ? `${currentVariant.length_mm} mm` : 'N/A'}
+                      {currentVariant.length_mm && currentVariant.length_mm > 0 ? `${currentVariant.length_mm} mm` : renderUnavailable()}
                     </span>
                   </div>
                   <div className="flex justify-between items-start gap-3 py-1 border-b border-[#313244]/20">
                     <span className="text-[#a6adc8] text-[11px] uppercase tracking-wider font-semibold">Width</span>
                     <span className="font-mono text-white text-xs font-bold text-right break-words max-w-[65%]">
-                      {currentVariant.width_mm ? `${currentVariant.width_mm} mm` : 'N/A'}
+                      {currentVariant.width_mm && currentVariant.width_mm > 0 ? `${currentVariant.width_mm} mm` : renderUnavailable()}
                     </span>
                   </div>
                   <div className="flex justify-between items-start gap-3 py-1 border-b border-[#313244]/20">
                     <span className="text-[#a6adc8] text-[11px] uppercase tracking-wider font-semibold">Height</span>
                     <span className="font-mono text-white text-xs font-bold text-right break-words max-w-[65%]">
-                      {currentVariant.height_mm ? `${currentVariant.height_mm} mm` : 'N/A'}
+                      {currentVariant.height_mm && currentVariant.height_mm > 0 ? `${currentVariant.height_mm} mm` : renderUnavailable()}
                     </span>
                   </div>
                   <div className="flex justify-between items-start gap-3 py-1 last:border-b-0">
                     <span className="text-[#a6adc8] text-[11px] uppercase tracking-wider font-semibold">Wheelbase</span>
                     <span className="font-mono text-white text-xs font-bold text-right break-words max-w-[65%]">
-                      {currentVariant.wheelbase_mm ? `${currentVariant.wheelbase_mm} mm` : 'N/A'}
+                      {currentVariant.wheelbase_mm && currentVariant.wheelbase_mm > 0 ? `${currentVariant.wheelbase_mm} mm` : renderUnavailable()}
                     </span>
                   </div>
                 </div>
@@ -337,27 +395,30 @@ export const ModelDetailModal: React.FC<ModelDetailModalProps> = ({
 
               {/* 4. Efficiency & Battery */}
               <div className="rounded-2xl bg-[#11111b] p-5 border border-[#313244] flex flex-col">
-                <div className="flex items-center gap-2 text-xs font-bold text-[#a6e3a1] mb-3 pb-2 border-b border-[#313244]">
-                  <BatteryCharging className="h-4 w-4" />
-                  <span>Efficiency & Electric</span>
+                <div className="flex items-center justify-between text-xs font-bold text-[#a6e3a1] mb-3 pb-2 border-b border-[#313244]">
+                  <div className="flex items-center gap-2">
+                    <BatteryCharging className="h-4 w-4" />
+                    <span>Efficiency & Electric</span>
+                  </div>
+                  <span className="text-[10px] font-mono text-[#a6adc8]">WLTP / NEDC</span>
                 </div>
                 <div className="space-y-2.5 text-xs flex-1">
                   <div className="flex justify-between items-start gap-3 py-1 border-b border-[#313244]/20">
                     <span className="text-[#a6adc8] text-[11px] uppercase tracking-wider font-semibold">Fuel Economy</span>
                     <span className="font-mono text-white text-xs font-bold text-right break-words max-w-[65%]">
-                      {currentVariant.fuel_consumption ? `${currentVariant.fuel_consumption} L/100km` : 'N/A'}
+                      {currentVariant.fuel_consumption ? `${currentVariant.fuel_consumption} L/100km` : renderUnavailable()}
                     </span>
                   </div>
                   <div className="flex justify-between items-start gap-3 py-1 border-b border-[#313244]/20">
                     <span className="text-[#a6adc8] text-[11px] uppercase tracking-wider font-semibold">Battery</span>
                     <span className="font-mono text-[#a6e3a1] text-xs font-bold text-right break-words max-w-[65%]">
-                      {currentVariant.battery_kwh ? `${currentVariant.battery_kwh} kWh` : 'N/A'}
+                      {currentVariant.battery_kwh ? `${currentVariant.battery_kwh} kWh` : renderUnavailable()}
                     </span>
                   </div>
                   <div className="flex justify-between items-start gap-3 py-1 last:border-b-0">
                     <span className="text-[#a6adc8] text-[11px] uppercase tracking-wider font-semibold">Electric Range</span>
                     <span className="font-mono text-[#94e2d5] text-xs font-bold text-right break-words max-w-[65%]">
-                      {currentVariant.electric_range_km ? `${currentVariant.electric_range_km} km` : 'N/A'}
+                      {currentVariant.electric_range_km ? `${currentVariant.electric_range_km} km` : renderUnavailable()}
                     </span>
                   </div>
                 </div>
@@ -376,7 +437,7 @@ export const ModelDetailModal: React.FC<ModelDetailModalProps> = ({
             </div>
           ) : model.yearlySales.length > 0 && (
             <div className="rounded-2xl bg-[#11111b] p-5 border border-[#313244]">
-              <div className="flex items-center justify-between mb-3 border-b border-[#313244] pb-2.5">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-3 border-b border-[#313244] pb-2.5 gap-2">
                 <div className="flex items-center gap-2">
                   <TrendingUp className="h-4 w-4 text-[#89b4fa]" />
                   <h4 className="text-sm font-bold text-white font-['Outfit']">
@@ -385,6 +446,9 @@ export const ModelDetailModal: React.FC<ModelDetailModalProps> = ({
                 </div>
                 <div className="text-xs text-[#a6adc8]">
                   Total Lifecycle Volume: <strong className="text-white font-mono">{model.totalSales.toLocaleString()} units</strong>
+                  {model.hasPartialSalesData && (
+                    <span className="ml-2 text-[10px] text-[#f9e2af] font-medium">(includes 2024 partial YTD)</span>
+                  )}
                 </div>
               </div>
               <div className="h-48 w-full">
@@ -404,7 +468,10 @@ export const ModelDetailModal: React.FC<ModelDetailModalProps> = ({
                       tickFormatter={(v) => v >= 1_000_000 ? `${(v/1_000_000).toFixed(1)}M` : `${(v/1_000).toFixed(0)}k`} 
                     />
                     <Tooltip 
-                      formatter={(v: any) => [`${Number(v).toLocaleString()} units`, 'Deliveries']}
+                      formatter={(v: any, name: any, item: any) => [
+                        `${Number(v).toLocaleString()} units ${item.payload.isCompleteYear ? '(Audited Annual)' : `(${item.payload.coverageLabel})`}`,
+                        'Deliveries'
+                      ]}
                       contentStyle={{ backgroundColor: '#181825', borderColor: '#313244', borderRadius: '10px' }}
                     />
                     <Area type="monotone" dataKey="units" stroke="#89b4fa" strokeWidth={2} fill="url(#genGradient)" />
@@ -436,21 +503,25 @@ export const ModelDetailModal: React.FC<ModelDetailModalProps> = ({
 
           {/* Source Provenance References */}
           <div className="rounded-2xl bg-[#11111b] p-4 border border-[#313244] text-xs">
-            <div className="flex items-center gap-2 font-bold text-[#cdd6f4] mb-2">
-              <FileText className="h-4 w-4 text-[#94e2d5]" />
-              <span>Provenance & Source Citations</span>
+            <div className="flex items-center justify-between font-bold text-[#cdd6f4] mb-2">
+              <div className="flex items-center gap-2">
+                <FileText className="h-4 w-4 text-[#94e2d5]" />
+                <span>Provenance & Source Citations</span>
+              </div>
+              <span className="text-[10px] text-[#a6e3a1] font-mono">High Confidence</span>
             </div>
             <div className="flex flex-wrap gap-2 text-[11px]">
-              {model.sources.history.slice(0, 2).map((s, idx) => (
+              {model.sources.history.concat(model.sources.specs).slice(0, 3).map((s, idx) => (
                 <a
                   key={idx}
                   href={s.source_url}
                   target="_blank"
                   rel="noreferrer"
-                  className="flex items-center gap-1 rounded-lg bg-[#181825] px-2.5 py-1 text-[#b4befe] hover:underline border border-[#313244]"
+                  className="flex items-center gap-1.5 rounded-lg bg-[#181825] px-2.5 py-1 text-[#b4befe] hover:underline border border-[#313244]"
                 >
+                  <ShieldCheck className="h-3 w-3 text-[#a6e3a1]" />
                   <span>{s.source_name}</span>
-                  <ExternalLink className="h-2.5 w-2.5" />
+                  <ExternalLink className="h-2.5 w-2.5 opacity-70" />
                 </a>
               ))}
             </div>
