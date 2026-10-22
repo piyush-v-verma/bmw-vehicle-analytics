@@ -199,9 +199,11 @@ export const ModelComparisonView: React.FC<ModelComparisonViewProps> = ({
               >
                 <button
                   onClick={() => onRemoveFromCompare(car)}
-                  className="absolute top-2 right-2 flex h-6 w-6 items-center justify-center rounded-full bg-white/10 text-[#a6adc8] hover:text-white hover:bg-white/20 transition-all"
+                  className="absolute top-2.5 right-2.5 z-20 flex h-7 w-7 items-center justify-center rounded-full bg-[#11111b] text-white border border-white/40 shadow-xl hover:bg-[#f38ba8] hover:border-[#f38ba8] hover:text-[#11111b] transition-all hover:scale-110 group cursor-pointer"
+                  title={`Remove ${car.model_name} from comparison`}
+                  aria-label={`Remove ${car.model_name} from comparison`}
                 >
-                  <X className="h-3.5 w-3.5" />
+                  <X className="h-4 w-4 transition-transform group-hover:rotate-90" />
                 </button>
 
                 <div>

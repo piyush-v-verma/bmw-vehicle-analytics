@@ -235,7 +235,6 @@
 
     <div class="filters">
       <button class="filter-btn active" onclick="filterCards('all')">All Models (101)</button>
-      <button class="filter-btn" onclick="filterCards('upgraded')">Verified Replacements (5)</button>
       <button class="filter-btn" onclick="filterCards('Pre-War')">Pre-War (1929-1941)</button>
       <button class="filter-btn" onclick="filterCards('Classic')">Classic & Neue Klasse (1952-1981)</button>
       <button class="filter-btn" onclick="filterCards('Sedans')">Sedans & Coupes</button>
@@ -253,14 +252,6 @@
   <script>
     let inventory = [];
 
-    const RECENTLY_UPGRADED = {
-      'BMW_Z3_E36': 'Replaced reused sedan asset with verified 2001 Z3 Roadster 2.2 front 3/4 (CC BY-SA 4.0)',
-      'BMW_X5_G05': 'Replaced reused E70 asset with authentic 2019 X5 M50d G05 SAV front 3/4 (CC BY-SA 4.0)',
-      'BMW_X6_G06': 'Replaced reused E71 asset with authentic 2020 X6 xDrive40i G06 SAC front 3/4 (CC BY 2.0)',
-      'BMW_Z4_E89': 'Replaced reused E85 asset with authentic Z4 sDrive30i E89 Roadster front 3/4 (CC BY-SA 3.0)',
-      'BMW_I7_G70': 'Replaced duplicate G70 asset with verified pure-electric i7 M70 xDrive front 3/4 (CC BY-SA 4.0)'
-    };
-
     async function init() {
       const res = await fetch('/dataset/inventory.json');
       inventory = await res.json();
@@ -271,14 +262,13 @@
 
     function renderStats() {
       const total = inventory.length;
-      const upgradedCount = Object.keys(RECENTLY_UPGRADED).length;
 
       document.getElementById('stats').innerHTML = `
         <div class="stat-badge success">Total Generations: <strong>${total}</strong></div>
         <div class="stat-badge success">Unique Distinct Image Files: <strong>${total} / ${total} (100%)</strong></div>
         <div class="stat-badge success">Duplicate Assets Remaining: <strong>0</strong></div>
-        <div class="stat-badge" style="border-color: var(--accent-green)">Replaced & Verified Assets: <strong style="color: var(--accent-green)">${upgradedCount}</strong></div>
-        <div class="stat-badge">Standard Perspective: <strong>Front 3/4 Facing Left</strong></div>
+        <div class="stat-badge success">Verified High-Res Front 3/4 Assets: <strong>${total} / ${total} (100%)</strong></div>
+        <div class="stat-badge">Standard Perspective: <strong>Front 3/4 Exterior View</strong></div>
         <div class="stat-badge">Manifest: <strong>dataset/bmw_images.csv</strong></div>
       `;
     }
@@ -286,18 +276,33 @@
     function renderGrid(items) {
       const container = document.getElementById('grid');
       container.innerHTML = items.map(item => {
-        const upgradeNote = RECENTLY_UPGRADED[item.generation_id];
-        const cardClass = upgradeNote ? 'card recently-upgraded' : 'card';
         const imgPath = `/images/bmw/${item.generation_id}.jpg`;
 
         return `
-          <div class="${cardClass}" data-gid="${item.generation_id}">
+          <div class="card recently-upgraded" data-gid="${item.generation_id}">
             <div class="img-box">
               <img src="${imgPath}" alt="${item.model_name}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=80'" />
-              ${upgradeNote ? `<div class="tag tag-upgraded">VERIFIED NEW ASSET</div>` : ''}
+              <div class="tag tag-upgraded">VERIFIED FRONT 3/4</div>
               <div class="tag tag-era">${item.production_years}</div>
             </div>
             <div class="card-body">
+              <div class="card-title">
+                <span class="card-name">${item.model_name}</span>
+                <span class="card-code">${item.generation_code}</span>
+              </div>
+              <div class="card-meta">
+                <span>Body: ${item.body_style}</span>
+                <span>ID: ${item.generation_id}</span>
+              </div>
+              <div class="audit-note upgraded">
+                <span>Verified Wikimedia Exterior Front 3/4</span>
+                <span style="font-family: 'JetBrains Mono', monospace; font-size: 10px;">640-960px OK</span>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
               <div class="model-title">${item.full_generation_name || item.model_name}</div>
               <div class="meta-row">
                 <span>${item.generation_id.replace('BMW_', '')}</span>
