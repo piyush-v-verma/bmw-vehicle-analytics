@@ -13,12 +13,15 @@ import {
   Maximize2,
   Share2,
   Check,
-  ShieldCheck
+  ShieldCheck,
+  BarChart3
 } from 'lucide-react';
 import {
   ResponsiveContainer,
   AreaChart,
   Area,
+  BarChart,
+  Bar,
   XAxis,
   YAxis,
   Tooltip,
@@ -52,6 +55,7 @@ export const ModelDetailModal: React.FC<ModelDetailModalProps> = ({
     model.primaryVariant.variant_id
   );
 
+  const [salesChartMode, setSalesChartMode] = useState<'bar' | 'area'>('bar');
   const [imgLoaded, setImgLoaded] = useState(false);
   const [copiedLink, setCopiedLink] = useState(false);
   const imgRef = useRef<HTMLImageElement>(null);
@@ -62,6 +66,7 @@ export const ModelDetailModal: React.FC<ModelDetailModalProps> = ({
     setSelectedVariantId(model.primaryVariant.variant_id);
     setImgLoaded(false);
     setCopiedLink(false);
+    setSalesChartMode('bar');
   }, [model.generation_id]);
 
   useEffect(() => {
@@ -438,60 +443,160 @@ export const ModelDetailModal: React.FC<ModelDetailModalProps> = ({
           ) : model.yearlySales.length > 0 && (
             <div className="rounded-2xl bg-[#11111b] p-5 border border-[#313244]">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-3 border-b border-[#313244] pb-2.5 gap-2">
-                <div className="flex items-center gap-2">
-                  <TrendingUp className="h-4 w-4 text-[#89b4fa]" />
-                  <h4 className="text-sm font-bold text-white font-['Outfit']">
-                    Generation Deliveries Timeline ({model.production_start}{model.production_end ? `–${model.production_end}` : '–pres.'})
-                  </h4>
+                <div>
+                  <div className="flex items-center gap-2">
+                    <TrendingUp className="h-4 w-4 text-[#89b4fa]" />
+                    <h4 className="text-sm font-bold text-white font-['Outfit']">
+                      Recorded Deliveries History ({model.yearlySales[0].year}–{model.yearlySales[model.yearlySales.length - 1].year})
+                    </h4>
+                  </div>
+                  <p className="text-[11px] text-[#a6adc8] mt-0.5">
+                    {model.status === 'Active'
+                      ? 'Active Generation in 2026 Production • Audited IR data on record extends through 2024'
+                      : `Official BMW Historical Archive deliveries across completed lifecycle (${model.production_start}–${model.production_end})`}
+                  </p>
                 </div>
-                <div className="text-xs text-[#a6adc8]">
-                  Total Lifecycle Volume: <strong className="text-white font-mono">{model.totalSales.toLocaleString()} units</strong>
-                  {model.hasPartialSalesData && (
-                    <span className="ml-2 text-[10px] text-[#f9e2af] font-medium">(includes 2024 partial YTD)</span>
+
+                <div className="flex items-center gap-2">
+                  <div className="text-xs text-[#a6adc8]">
+                    Total Volume: <strong className="text-white font-mono">{model.totalSales.toLocaleString()} units</strong>
+                  </div>
+
+                  {model.yearlySales.length > 1 && (
+                    <div className="flex items-center rounded-lg bg-[#181825] p-0.5 border border-[#313244] text-[11px]">
+                      <button
+                        onClick={() => setSalesChartMode('bar')}
+                        className={`rounded-md px-2 py-0.5 transition-all ${
+                          salesChartMode === 'bar'
+                            ? 'bg-[#89b4fa] font-bold text-[#11111b]'
+                            : 'text-[#a6adc8] hover:text-white'
+                        }`}
+                      >
+                        Bars
+                      </button>
+                      <button
+                        onClick={() => setSalesChartMode('area')}
+                        className={`rounded-md px-2 py-0.5 transition-all ${
+                          salesChartMode === 'area'
+                            ? 'bg-[#89b4fa] font-bold text-[#11111b]'
+                            : 'text-[#a6adc8] hover:text-white'
+                        }`}
+                      >
+                        Trend
+                      </button>
+                    </div>
                   )}
                 </div>
               </div>
+
+              {/* Single Year Launch Callout when vehicle has 1 recorded year */}
+              {model.yearlySales.length === 1 && (
+                <div className="mb-3 rounded-xl bg-[#89b4fa]/10 p-2.5 border border-[#89b4fa]/20 text-xs text-[#cdd6f4] flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <div className="flex items-center gap-2">
+                    <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#89b4fa]/20 text-[#89b4fa] font-bold text-[10px]">
+                      1
+                    </span>
+                    <span>
+                      Initial launch deliveries recorded for <strong>{model.yearlySales[0].year}</strong>: <strong className="text-[#89b4fa] font-mono">{model.yearlySales[0].units.toLocaleString()} units</strong>.
+                    </span>
+                  </div>
+                  {model.status === 'Active' && (
+                    <span className="text-[10px] text-[#f9e2af] font-medium bg-[#f9e2af]/10 px-2 py-0.5 rounded border border-[#f9e2af]/20 shrink-0">
+                      2025–2026 pending BMW AG fiscal year-end report
+                    </span>
+                  )}
+                </div>
+              )}
+
+              {/* Chart Canvas */}
               <div className="h-48 w-full">
                 <ResponsiveContainer width="100%" height="100%">
-                  <AreaChart data={model.yearlySales} margin={{ top: 10, right: 20, left: 10, bottom: 0 }}>
-                    <defs>
-                      <linearGradient id="genGradient" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="5%" stopColor="#89b4fa" stopOpacity={0.4} />
-                        <stop offset="95%" stopColor="#89b4fa" stopOpacity={0.0} />
-                      </linearGradient>
-                    </defs>
-                    <CartesianGrid strokeDasharray="3 3" stroke="#313244" vertical={false} />
-                    <XAxis dataKey="year" stroke="#a6adc8" fontSize={11} tickLine={false} />
-                    <YAxis 
-                      width={55}
-                      stroke="#a6adc8" 
-                      fontSize={11} 
-                      tickFormatter={(v) => v >= 1_000_000 ? `${(v/1_000_000).toFixed(1)}M` : `${(v/1_000).toFixed(0)}k`} 
-                      tickLine={false}
-                      axisLine={false}
-                    />
-                    <Tooltip 
-                      formatter={(v: any, name: any, item: any) => {
-                        const valNum = Number(v || 0);
-                        const inMillions = valNum >= 100_000 ? ` (${(valNum / 1_000_000).toFixed(2)}M)` : '';
-                        const isComp = item?.payload?.isCompleteYear;
-                        const cov = item?.payload?.coverageLabel || (isComp ? 'Audited Annual' : 'Partial');
-                        return [`${valNum.toLocaleString()} units${inMillions} • ${cov}`, 'Deliveries'];
-                      }}
-                      labelFormatter={(label) => `Year ${label}`}
-                      contentStyle={{ backgroundColor: '#181825', borderColor: '#313244', borderRadius: '10px' }}
-                    />
-                    <Area 
-                      type="monotone" 
-                      dataKey="units" 
-                      stroke="#89b4fa" 
-                      strokeWidth={2} 
-                      fill="url(#genGradient)" 
-                      dot={{ r: 4, fill: '#89b4fa', stroke: '#11111b', strokeWidth: 1.5 }}
-                      activeDot={{ r: 6, fill: '#b4befe', stroke: '#11111b', strokeWidth: 2 }}
-                    />
-                  </AreaChart>
+                  {salesChartMode === 'bar' || model.yearlySales.length === 1 ? (
+                    <BarChart data={model.yearlySales} margin={{ top: 10, right: 20, left: 10, bottom: 0 }}>
+                      <CartesianGrid strokeDasharray="3 3" stroke="#313244" vertical={false} />
+                      <XAxis dataKey="year" stroke="#a6adc8" fontSize={11} tickLine={false} />
+                      <YAxis
+                        width={55}
+                        stroke="#a6adc8"
+                        fontSize={11}
+                        tickFormatter={(v) => v >= 1_000_000 ? `${(v/1_000_000).toFixed(1)}M` : `${(v/1_000).toFixed(0)}k`}
+                        tickLine={false}
+                        axisLine={false}
+                      />
+                      <Tooltip
+                        formatter={(v: any, name: any, item: any) => {
+                          const valNum = Number(v || 0);
+                          const inMillions = valNum >= 100_000 ? ` (${(valNum / 1_000_000).toFixed(2)}M)` : '';
+                          const isComp = item?.payload?.isCompleteYear;
+                          const cov = item?.payload?.coverageLabel || (isComp ? 'Audited Annual' : 'Partial');
+                          return [`${valNum.toLocaleString()} units${inMillions} • ${cov}`, 'Deliveries'];
+                        }}
+                        labelFormatter={(label) => `Year ${label}`}
+                        contentStyle={{ backgroundColor: '#181825', borderColor: '#313244', borderRadius: '10px' }}
+                      />
+                      <Bar
+                        dataKey="units"
+                        fill="#89b4fa"
+                        radius={[6, 6, 0, 0]}
+                        maxBarSize={model.yearlySales.length === 1 ? 70 : 45}
+                      />
+                    </BarChart>
+                  ) : (
+                    <AreaChart data={model.yearlySales} margin={{ top: 10, right: 20, left: 10, bottom: 0 }}>
+                      <defs>
+                        <linearGradient id="genGradient" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="5%" stopColor="#89b4fa" stopOpacity={0.4} />
+                          <stop offset="95%" stopColor="#89b4fa" stopOpacity={0.0} />
+                        </linearGradient>
+                      </defs>
+                      <CartesianGrid strokeDasharray="3 3" stroke="#313244" vertical={false} />
+                      <XAxis dataKey="year" stroke="#a6adc8" fontSize={11} tickLine={false} />
+                      <YAxis
+                        width={55}
+                        stroke="#a6adc8"
+                        fontSize={11}
+                        tickFormatter={(v) => v >= 1_000_000 ? `${(v/1_000_000).toFixed(1)}M` : `${(v/1_000).toFixed(0)}k`}
+                        tickLine={false}
+                        axisLine={false}
+                      />
+                      <Tooltip
+                        formatter={(v: any, name: any, item: any) => {
+                          const valNum = Number(v || 0);
+                          const inMillions = valNum >= 100_000 ? ` (${(valNum / 1_000_000).toFixed(2)}M)` : '';
+                          const isComp = item?.payload?.isCompleteYear;
+                          const cov = item?.payload?.coverageLabel || (isComp ? 'Audited Annual' : 'Partial');
+                          return [`${valNum.toLocaleString()} units${inMillions} • ${cov}`, 'Deliveries'];
+                        }}
+                        labelFormatter={(label) => `Year ${label}`}
+                        contentStyle={{ backgroundColor: '#181825', borderColor: '#313244', borderRadius: '10px' }}
+                      />
+                      <Area
+                        type="monotone"
+                        dataKey="units"
+                        stroke="#89b4fa"
+                        strokeWidth={2}
+                        fill="url(#genGradient)"
+                        dot={{ r: 4, fill: '#89b4fa', stroke: '#11111b', strokeWidth: 1.5 }}
+                        activeDot={{ r: 6, fill: '#b4befe', stroke: '#11111b', strokeWidth: 2 }}
+                      />
+                    </AreaChart>
+                  )}
                 </ResponsiveContainer>
+              </div>
+
+              {/* Data Explanation Footer */}
+              <div className="mt-2.5 flex flex-col sm:flex-row sm:items-center justify-between text-[11px] text-[#a6adc8] border-t border-[#313244]/40 pt-2 gap-1">
+                <div className="flex items-center gap-1.5">
+                  <ShieldCheck className="h-3 w-3 text-[#a6e3a1] shrink-0" />
+                  <span>
+                    {model.status === 'Active'
+                      ? 'Why till 2024? BMW Group IR annual reports currently publish audited delivery figures through 2024. Active 2025–2026 fleet production volume awaits fiscal year-end publication.'
+                      : `Complete lifecycle sales history from official BMW Group Classic archival records (${model.production_start}–${model.production_end}).`}
+                  </span>
+                </div>
+                <div className="font-mono text-[10px] text-[#89b4fa] font-semibold shrink-0">
+                  {model.yearlySales.length} {model.yearlySales.length === 1 ? 'Year On Record' : 'Years Recorded'}
+                </div>
               </div>
             </div>
           )}
